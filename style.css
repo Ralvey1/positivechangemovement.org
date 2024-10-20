@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -5,14 +6,63 @@ body {
     padding: 20px;
 }
 
+/* Header Styling */
 header {
-    background-color: navy;
+    background-color: #001f54; /* Navy Blue */
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 80px 20px;
 }
-img {
-  max-width: 100%; /* Ensures images fit within the parent container */
-  height: auto; /* Maintains aspect ratio */
-  max-height: 300px; /* Reduces the placeholder height */
+
+h1 {
+    font-size: 3em;
+    color: #e63946; /* HIV Red */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Hero Image Styling */
+.hero-image {
+    height: 300px;
+    background-color: #e63946; /* HIV Red */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #e63946; /* HIV Red for links */
+    text-decoration: none;
+}
+
+/* Section Styles */
+#about {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
 }
