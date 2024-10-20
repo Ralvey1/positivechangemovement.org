@@ -1,148 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Positive Change Movement - Empowering the HIV+ community through advocacy, education, and support.">
-    <title>Positive Change Movement</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#mission">Mission</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#resources">Resources</a></li>
-            </ul>
-        </nav>
-        <div class="hero-image">
-            <h1>Positive Change Movement</h1>
-            <p>Empowering the HIV+ community through advocacy, education, and support.</p>
-            <button class="cta-button">Learn More</button>
-        </div>
-    </header>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- Mission Section -->
-    <section id="mission">
-        <h2>Our Mission</h2>
-        <p>To provide education, advocacy, and support for the HIV+ community, aiming to empower individuals and fight stigma.</p>
-    </section>
+/* Navigation */
+nav ul {
+    list-style: none;
+    background-color: #001f54;
+    padding: 20px;
+    text-align: center;
+}
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service-item">
-                <h3>Support Groups</h3>
-                <p>We host weekly support groups for HIV+ individuals and allies.</p>
-            </div>
-            <div class="service-item">
-                <h3>Advocacy</h3>
-                <p>Our advocacy work involves pushing for HIV decriminalization and health care reform.</p>
-            </div>
-            <div class="service-item">
-                <h3>Healthcare Navigation</h3>
-                <p>We assist individuals with navigating healthcare systems and accessing treatment.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <h2>What People Are Saying</h2>
-        <div class="testimonial-slider">
-            <div class="testimonial">
-                <p>"Positive Change Movement has changed my life. The support I received has been incredible!" - Alex</p>
-            </div>
-            <div class="testimonial">
-                <p>"Their healthcare navigation services helped me get access to the care I needed." - Jordan</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog">
-        <h2>From Our Blog</h2>
-        <div class="blog-grid">
-            <article>
-                <h3>How to Advocate for HIV Decriminalization</h3>
-                <p>Learn more about the ongoing fight for HIV decriminalization and what you can do to help.</p>
-                <a href="#">Read More</a>
-            </article>
-            <article>
-                <h3>Living Well with HIV</h3>
-                <p>Read tips on maintaining your health and well-being while living with HIV.</p>
-                <a href="#">Read More</a>
-            </article>
-        </div>
-    </section>
-
-    <!-- Contact Section
-
-
-    <!-- Mission Section -->
-    <section id="mission">
-        <h2>Our Mission</h2>
-        <p>To provide education, advocacy, and support for the HIV+ community, aiming to empower individuals and fight stigma.</p>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service-item">
-                <h3>Support Groups</h3>
-                <p>We host weekly support groups for HIV+ individuals and allies.</p>
-            </div>
-            <div class="service-item">
-                <h3>Advocacy</h3>
-                <p>Our advocacy work involves pushing for HIV decriminalization and health care reform.</p>
-            </div>
-            <div class="service-item">
-                <h3>Healthcare Navigation</h3>
-                <p>We assist individuals with navigating healthcare systems and accessing treatment.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <h2>What People Are Saying</h2>
-        <div class="testimonial-slider">
-            <div class="testimonial">
-                <p>"Positive Change Movement has changed my life. The support I received has been incredible!" - Alex</p>
-            </div>
-            <div class="testimonial">
-                <p>"Their healthcare navigation services helped me get access to the care I needed." - Jordan</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog">
-        <h2>From Our Blog</h2>
-        <div class="blog-grid">
-            <article>
-                <h3>How to Advocate for HIV Decriminalization</h3>
-                <p>Learn more about the ongoing fight for HIV decriminalization and what you can do to help.</p>
-                <a href="#">Read More</a>
-            </article>
-            <article>
-                <h3>Living Well with HIV</h3>
-                <p>Read tips on maintaining your health and well-being while living with HIV.</p>
-                <a href="#">Read More</a>
-            </article>
-        </div>
-    </section>
-
-    <!-- Contact Section
-
-    margin-right: 20px;
+nav ul li {
+    display: inline;
+    margin-right: 15px;
 }
 
 nav ul li a {
@@ -151,33 +25,108 @@ nav ul li a {
     font-size: 1.2em;
 }
 
-/* Hero Image Styling */
+/* Hero Image */
 .hero-image {
+    background-color: #e63946;
     height: 300px;
-    background-color: #e63946; /* HIV Red */
+    color: white;
     text-align: center;
-    padding: 20px;
+    padding-top: 100px;
 }
 
-/* Footer Styling */
+.hero-image h1 {
+    font-size: 3.5em;
+}
+
+.cta-button {
+    background-color: white;
+    color: #e63946;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.cta-button:hover {
+    background-color: #f4f4f9;
+    color: #e63946;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#services .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Testimonials Slider */
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial {
+    width: 80%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* Blog Section */
+#blog .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#blog article {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 a {
-    color: #e63946; /* HIV Red for links */
+    color: #e63946;
     text-decoration: none;
-}
-
-/* Section Styles */
-#about {
-    background-color: #f4f4f4;
-    padding: 40px;
-    text-align: center;
 }
