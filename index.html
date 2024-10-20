@@ -11,28 +11,101 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Mission & Vision</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Resources</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resources">Resources</a></li>
             </ul>
         </nav>
-        <h1>Positive Change Movement</h1>
-        <p>Empowering the HIV+ community through advocacy, education, and support.</p>
+        <div class="hero-image">
+            <h1>Positive Change Movement</h1>
+            <p>Empowering the HIV+ community through advocacy, education, and support.</p>
+            <button class="cta-button">Learn More</button>
+        </div>
     </header>
 
-    <div class="hero-image">
-        <h2>Hero Image Placeholder (Red)</h2>
-    </div>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Our mission is to empower the HIV+ community through advocacy, healthcare, and education.</p>
+    <!-- Mission Section -->
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>To provide education, advocacy, and support for the HIV+ community, aiming to empower individuals and fight stigma.</p>
     </section>
 
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Support Groups</h3>
+                <p>We host weekly support groups for HIV+ individuals and allies.</p>
+            </div>
+            <div class="service-item">
+                <h3>Advocacy</h3>
+                <p>Our advocacy work involves pushing for HIV decriminalization and health care reform.</p>
+            </div>
+            <div class="service-item">
+                <h3>Healthcare Navigation</h3>
+                <p>We assist individuals with navigating healthcare systems and accessing treatment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What People Are Saying</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p>"Positive Change Movement has changed my life. The support I received has been incredible!" - Alex</p>
+            </div>
+            <div class="testimonial">
+                <p>"Their healthcare navigation services helped me get access to the care I needed." - Jordan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>From Our Blog</h2>
+        <div class="blog-grid">
+            <article>
+                <h3>How to Advocate for HIV Decriminalization</h3>
+                <p>Learn more about the ongoing fight for HIV decriminalization and what you can do to help.</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>Living Well with HIV</h3>
+                <p>Read tips on maintaining your health and well-being while living with HIV.</p>
+                <a href="#">Read More</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources">
+        <h2>Resources</h2>
+        <p>Find helpful resources for the HIV+ community here.</p>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Positive Change Movement. All rights reserved.</p>
         <p>Follow us on social media: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
