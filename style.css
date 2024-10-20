@@ -11,3 +11,8 @@ header {
     text-align: center;
     padding: 10px;
 }
+img {
+  max-width: 100%; /* Ensures images fit within the parent container */
+  height: auto; /* Maintains aspect ratio */
+  max-height: 300px; /* Reduces the placeholder height */
+}
