@@ -19,7 +19,7 @@
         }
 
         header {
-            background-color: #d44b47; /* Updated to red */
+            background-color: #d44b47;
             color: white;
             padding: 20px;
             text-align: center;
@@ -28,10 +28,11 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #d44b47; /* Change to red */
+            background-color: #d44b47;
             padding: 15px;
             position: sticky;
             top: 0;
+            width: 100%; /* Ensure full-width */
             z-index: 1000;
         }
 
@@ -50,9 +51,10 @@
         .hero {
             background: url('hero-image.jpg') no-repeat center center/cover;
             color: white;
-            padding: 100px 20px; /* Added padding */
+            padding: 100px 20px;
             text-align: center;
             position: relative;
+            min-height: 70vh;
         }
 
         .hero::before {
@@ -62,7 +64,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text contrast */
+            background-color: rgba(0, 0, 0, 0.5);
             z-index: 1;
         }
 
@@ -70,10 +72,18 @@
             z-index: 2;
             position: relative;
             font-size: 3.5em;
+            max-width: 80%;
+            margin: 0 auto;
         }
 
         h1, h2, h3 {
-            color: #d44b47; /* Red headers */
+            color: #d44b47;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
         }
 
         .services {
@@ -114,7 +124,7 @@
         }
 
         footer {
-            background-color: #d44b47; /* Footer changed to red */
+            background-color: #d44b47;
             color: white;
             padding: 20px;
             text-align: center;
@@ -126,7 +136,7 @@
             }
 
             h1 {
-                font-size: 5vw; /* Responsive heading size */
+                font-size: 5vw;
             }
         }
     </style>
@@ -138,7 +148,6 @@
 </header>
 
 <nav>
-    <a href="#">Home</a>
     <a href="#">Mission</a>
     <a href="#">Services</a>
     <a href="#">Testimonials</a>
