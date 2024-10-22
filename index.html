@@ -5,39 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Positive Change Movement is a community-driven initiative championing health, advocacy, and nurturing growth and empowerment for People Living with HIV (PLHIV).">
     <title>Positive Change Movement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gotham:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Gotham', sans-serif;
         }
-
         body {
             background-color: #f9f9f9;
             color: #333;
-            line-height: 1.6;
         }
-
         header {
-            background-color: #E30613;
+            background-color: #003366;
             color: white;
             padding: 20px;
             text-align: center;
-            position: relative;
         }
-
         nav {
             display: flex;
             justify-content: center;
-            background-color: #E30613;
+            background-color: #003366;
             padding: 15px;
             position: sticky;
             top: 0;
-            width: 100%;
             z-index: 1000;
         }
-
         nav a {
             color: white;
             text-decoration: none;
@@ -45,84 +39,148 @@
             font-weight: bold;
             transition: color 0.3s;
         }
-<nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="resources.html">Resources</a> <!-- Link to the new page -->
-    <a href="contact.html">Contact</a>
-</nav>
         nav a:hover {
-            color: #f9f9f9;
+            color: #f4b942;
         }
-
         .hero {
-            background-color: rgba(12, 35, 64, 0.7);
+            background: url('hero-image.jpg') no-repeat center center/cover;
             color: white;
-            padding: 100px 20px;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            position: relative;
-            min-height: 70vh;
-            background-size: cover;
-            background-position: center;
         }
-
-        .hero h1, .hero p {
-            position: relative;
-            font-size: 2.5em;
-            max-width: 80%;
-            margin: 0 auto;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        .hero h1 {
+            font-size: 3.5em;
+            animation: fadeInDown 1.2s ease-in-out;
         }
-
         .hero p {
-            font-size: 1.2em;
-            margin-top: 10px;
+            font-size: 1.5em;
+            margin-top: 20px;
         }
-
-        .services, .testimonials, .blog {
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        section {
             padding: 60px 20px;
             max-width: 1200px;
             margin: auto;
         }
-
-        .services h2, .testimonials h2, .blog h2 {
+        .mission {
             text-align: center;
-            margin-bottom: 30px;
-            color: #E30613;
+            margin-bottom: 60px;
         }
-
-        .service, .testimonial, .blog-post {
+        .mission h2 {
+            font-size: 2.5em;
+            color: #003366;
+            margin-bottom: 20px;
+        }
+        .mission p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .service {
             background-color: #fff;
             padding: 30px;
-            margin-bottom: 20px;
+            flex: 1;
+            margin: 0 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
-
-        .service:hover, .testimonial:hover, .blog-post:hover {
-            transform: translateY(-5px);
+        .service:hover {
+            transform: translateY(-10px);
         }
-
-        .service h3, .testimonial h3, .blog-post h3 {
-            color: #E30613;
+        .service h3 {
+            color: #003366;
             margin-bottom: 15px;
         }
-
-        .contact-form {
-            padding: 40px;
-            background-color: #fff;
-            max-width: 600px;
-            margin: 50px auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        .service p {
+            font-size: 1.1em;
+            line-height: 1.6;
         }
-
-        .contact-form label {
+        .testimonials {
+            background-color: #f4f4f4;
+            padding: 60px 20px;
+        }
+        .testimonials h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #003366;
+        }
+        .testimonial {
+            margin-bottom: 30px;
+            font-style: italic;
+            color: #555;
+        }
+        .testimonial p {
+            font-size: 1.1em;
+        }
+        .testimonial span {
             display: block;
-            margin-bottom: 10px;
+            margin-top: 10px;
             font-weight: bold;
         }
-
+        .blog {
+            margin-top: 40px;
+        }
+        .blog h2 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 40px;
+        }
+        .blog-post {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+        .blog-post:hover {
+            transform: translateY(-10px);
+        }
+        .blog-post h3 {
+            font-size: 1.5em;
+            color: #d44b47;
+        }
+        .blog-post a {
+            text-decoration: none;
+            font-size: 1.1em;
+            color: #003366;
+            font-weight: bold;
+        }
+        .blog-post a:hover {
+            color: #f4b942;
+        }
+        .contact-form {
+            margin-top: 50px;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 40px;
+        }
+        .contact-form label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
         .contact-form input, .contact-form textarea {
             width: 100%;
             padding: 15px;
@@ -130,53 +188,33 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-
         .contact-form button {
-            background-color: #E30613;
+            background-color: #d44b47;
             color: white;
             padding: 15px 30px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 1.1em;
             display: block;
             margin: auto;
         }
-
+        .contact-form button:hover {
+            background-color: #b03835;
+        }
         footer {
-            background-color: #333;
+            background-color: #003366;
             color: white;
-            padding: 40px;
+            padding: 20px;
             text-align: center;
-            margin-top: 50px;
+            position: relative;
         }
-
-        footer p {
-            margin: 0;
-            font-size: 1em;
-        }
-
-        footer .social-icons {
-            margin-top: 20px;
-        }
-
-        footer .social-icons a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 1.5em;
-        }
-
         @media (max-width: 768px) {
-            .services, .testimonials, .blog {
-                padding: 40px 20px;
+            .services {
+                flex-direction: column;
             }
-
-            h1 {
-                font-size: 5vw;
-            }
-
-            .hero h1, .hero p {
-                font-size: 4vw;
+            .service {
+                margin: 20px 0;
             }
         }
     </style>
@@ -188,45 +226,51 @@
 </header>
 
 <nav>
+    <a href="#">Home</a>
     <a href="#">Mission</a>
     <a href="#">Services</a>
     <a href="#">Testimonials</a>
     <a href="#">Blog</a>
     <a href="#">Contact</a>
+    <a href="#">Resources</a>
 </nav>
 
 <section class="hero">
     <div>
-        <h1>Empowering the HIV+ community</h1>
-        <p>Through advocacy, education, and support.</p>
+        <h1>Positive Change Movement</h1>
+        <p>Empowering the HIV+ community through advocacy, education, and support.</p>
     </div>
 </section>
 
+<section class="mission">
+    <h2>Our Mission</h2>
+    <p>Positive Change Movement is a community-driven initiative championing health, advocacy, and nurturing growth and empowerment (CHANGE) for People Living with HIV (PLHIV). We focus on HIV peer support, decriminalization, and ending stigma through advocacy and reform, empowering communities throughout Kentucky and fostering change wherever it’s needed.</p>
+</section>
+
 <section class="services">
-    <h2>Our Services</h2>
     <div class="service">
         <h3>Support Groups</h3>
-        <p>We host weekly support groups for HIV+ individuals and allies.</p>
+        <p>We host weekly support groups for HIV+ individuals and allies, offering emotional and social support.</p>
     </div>
     <div class="service">
         <h3>Advocacy</h3>
-        <p>Our advocacy work involves pushing for HIV decriminalization and healthcare reform.</p>
+        <p>Our advocacy work involves pushing for HIV decriminalization and health care reform through action and legislation.</p>
     </div>
     <div class="service">
         <h3>Healthcare Navigation</h3>
-        <p>We assist individuals with navigating healthcare systems and accessing treatment.</p>
+        <p>We assist individuals with navigating healthcare systems and accessing necessary treatment and resources.</p>
     </div>
 </section>
 
 <section class="testimonials">
-    <h2>Testimonials</h2>
+    <h2>What People Are Saying</h2>
     <div class="testimonial">
-        <h3>Jordan</h3>
-        <p>"Positive Change Movement helped me access healthcare services I desperately needed."</p>
+        <p>"Positive Change Movement has changed my life. The support I received has been incredible!"</p>
+        <span>- Alex</span>
     </div>
     <div class="testimonial">
-        <h3>Alex</h3>
-        <p>"The support I received from this organization has been life-changing!"</p>
+        <p>"Their healthcare navigation services helped me get access to the care I needed to maintain my health."</p>
+        <span>- Jordan</span>
     </div>
 </section>
 
@@ -234,38 +278,7 @@
     <h2>From Our Blog</h2>
     <div class="blog-post">
         <h3>How to Advocate for HIV Decriminalization</h3>
-        <p>Learn more about the ongoing fight for HIV decriminalization and how you can help.</p>
-    </div>
-    <div class="blog-post">
-        <h3>Living Well with HIV</h3>
-        <p>Tips on maintaining your health and well-being while living with HIV.</p>
-    </div>
-</section>
+        <p>Learn more about the ongoing fight for HIV decriminalization and how you can get involved.</p>
+        <a href="#">Read More</a>
+    </
 
-<section class="contact-form">
-    <h2>Contact Us</h2>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-</section>
-
-<footer>
-    <p>&copy; 2024 Positive Change Movement | Health, Advocacy, Support – Your Positive Change Starts Here</p>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/hivpozlife" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/positive_change_movement/" target="_blank">Instagram</a>
-    </div>
-</footer>
-
-
-</body>
-</html>
