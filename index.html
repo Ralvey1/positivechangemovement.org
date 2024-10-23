@@ -13,6 +13,7 @@
     <h1>Positive Change Movement</h1>
 </header>
 
+<!-- Navigation Bar with Dropdowns -->
 <nav>
     <div class="menu-icon" onclick="toggleMenu()">
         <div class="bar"></div>
@@ -21,9 +22,24 @@
     </div>
     <ul id="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="mission.html">Mission and Vision</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="resources.html">Resources</a></li>
+        <li class="dropdown">
+            <a href="services.html">Services</a>
+            <ul class="dropdown-content">
+                <li><a href="#">HIV Prevention</a></li>
+                <li><a href="#">Clinical Services</a></li>
+                <li><a href="#">Support Services</a></li>
+                <li><a href="#">Schedule a Test</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">Info</a>
+            <ul class="dropdown-content">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="resources.html">HIV/AIDS Resources</a></li>
+                <li><a href="#">Job Openings</a></li>
+            </ul>
+        </li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
@@ -35,25 +51,6 @@
     </div>
 </section>
 
-<section class="pillars">
-    <div class="pillar">
-        <h2>Health</h2>
-        <p>Positive Change Movement focuses on the health and well-being of those living with HIV, offering access to essential medical services, treatment, and emotional care.</p>
-    </div>
-    <div class="pillar">
-        <h2>Support</h2>
-        <p>We offer consistent support through peer groups, counseling, and housing assistance for individuals navigating life with HIV.</p>
-    </div>
-    <div class="pillar">
-        <h2>Advocacy</h2>
-        <p>Positive Change Movement advocates for policy reform to decriminalize HIV and ensure equitable access to healthcare and resources for all PLWHIV.</p>
-    </div>
-    <div class="pillar">
-        <h2>Education</h2>
-        <p>Our team is dedicated to providing the latest information on HIV prevention, treatment options, and reducing stigma through comprehensive education.</p>
-    </div>
-</section>
-
 <footer>
     <p>&copy; 2024 Positive Change Movement | Health, Advocacy, Support – Your Positive Change Starts Here</p>
     <div class="social-icons">
@@ -62,7 +59,7 @@
     </div>
 </footer>
 
-<script src="script.js"></script> <!-- Link to the JavaScript file -->
+<script src="script.js"></script>
 </body>
 </html>
 
