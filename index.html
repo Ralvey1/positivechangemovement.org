@@ -29,25 +29,60 @@
 
         nav {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
             background-color: #E30613;
             padding: 15px;
-            position: sticky;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
         }
 
-        nav a {
+        nav .menu-icon {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        nav .menu-icon .bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
             color: white;
             text-decoration: none;
-            margin: 0 20px;
             font-weight: bold;
-            transition: color 0.3s;
         }
 
-        nav a:hover {
-            color: #f9f9f9;
+        /* Responsive menu for smaller screens */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background-color: #E30613;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                padding: 20px;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            nav .menu-icon {
+                display: flex;
+            }
         }
 
         .hero {
@@ -55,86 +90,52 @@
             color: white;
             padding: 100px 20px;
             text-align: center;
-            position: relative;
             min-height: 70vh;
-            background-size: cover;
-            background-position: center;
         }
 
         .hero h1, .hero p {
-            position: relative;
             font-size: 2.5em;
             max-width: 80%;
             margin: 0 auto;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
 
-        .hero p {
-            font-size: 1.2em;
-            margin-top: 10px;
+        .pillars {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            background-color: #f9f9f9;
         }
 
-        .services, .blog {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .services h2, .blog h2 {
+        .pillar {
+            flex: 1;
             text-align: center;
-            margin-bottom: 30px;
-            color: #E30613;
-        }
-
-        .service, .blog-post {
-            background-color: #fff;
-            padding: 30px;
-            margin-bottom: 20px;
+            padding: 20px;
+            margin: 10px;
+            background-color: #ffffff;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .service:hover, .blog-post:hover {
-            transform: translateY(-5px);
-        }
-
-        .service h3, .blog-post h3 {
-            color: #E30613;
-            margin-bottom: 15px;
-        }
-
-        .contact-form {
-            padding: 40px;
-            background-color: #fff;
-            max-width: 600px;
-            margin: 50px auto;
             border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        .contact-form label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 15px;
+        .pillar h2 {
+            color: #E30613;
+            font-size: 1.8em;
             margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
         }
 
-        .contact-form button {
-            background-color: #E30613;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            display: block;
-            margin: auto;
+        .pillar p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .pillars {
+                flex-direction: column;
+            }
+
+            .pillar {
+                margin-bottom: 20px;
+            }
         }
 
         footer {
@@ -142,16 +143,6 @@
             color: white;
             padding: 40px;
             text-align: center;
-            margin-top: 50px;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 1em;
-        }
-
-        footer .social-icons {
-            margin-top: 20px;
         }
 
         footer .social-icons a {
@@ -159,20 +150,6 @@
             margin: 0 10px;
             text-decoration: none;
             font-size: 1.5em;
-        }
-
-        @media (max-width: 768px) {
-            .services, .blog {
-                padding: 40px 20px;
-            }
-
-            h1 {
-                font-size: 5vw;
-            }
-
-            .hero h1, .hero p {
-                font-size: 4vw;
-            }
         }
     </style>
 </head>
@@ -183,61 +160,44 @@
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="mission.html">Mission and Vision</a> <!-- New tab added -->   
-    <a href="services.html">Services</a>
-    <a href="resources.html">Resources</a>
-    <a href="contact.html">Contact</a>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mission.html">Mission and Vision</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 </nav>
+
 <section class="hero">
     <div>
-        <h1>Empowering the HIV+ community</h1>
+        <h1>Empowering the HIV+ Community</h1>
         <p>Through advocacy, education, and support.</p>
     </div>
 </section>
 
-<section class="services">
-    <h2>Our Services</h2>
-    <div class="service">
-        <h3>Support Groups</h3>
-        <p>We host weekly support groups for HIV+ individuals and allies.</p>
+<section class="pillars">
+    <div class="pillar">
+        <h2>Health</h2>
+        <p>Positive Change Movement focuses on the health and well-being of those living with HIV, offering access to essential medical services, treatment, and emotional care.</p>
     </div>
-    <div class="service">
-        <h3>Advocacy</h3>
-        <p>Our advocacy work involves pushing for HIV decriminalization and healthcare reform.</p>
+    <div class="pillar">
+        <h2>Support</h2>
+        <p>We offer consistent support through peer groups, counseling, and housing assistance for individuals navigating life with HIV.</p>
     </div>
-    <div class="service">
-        <h3>Healthcare Navigation</h3>
-        <p>We assist individuals with navigating healthcare systems and accessing treatment.</p>
+    <div class="pillar">
+        <h2>Advocacy</h2>
+        <p>Positive Change Movement advocates for policy reform to decriminalize HIV and ensure equitable access to healthcare and resources for all PLWHIV.</p>
     </div>
-</section>
-
-<section class="blog">
-    <h2>From Our Blog</h2>
-    <div class="blog-post">
-        <h3>How to Advocate for HIV Decriminalization</h3>
-        <p>Learn more about the ongoing fight for HIV decriminalization and how you can help.</p>
+    <div class="pillar">
+        <h2>Education</h2>
+        <p>Our team is dedicated to providing the latest information on HIV prevention, treatment options, and reducing stigma through comprehensive education.</p>
     </div>
-    <div class="blog-post">
-        <h3>Living Well with HIV</h3>
-        <p>Tips on maintaining your health and well-being while living with HIV.</p>
-    </div>
-</section>
-
-<section class="contact-form">
-    <h2>Contact Us</h2>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
 </section>
 
 <footer>
@@ -247,6 +207,13 @@
         <a href="https://www.instagram.com/positive_change_movement/" target="_blank">Instagram</a>
     </div>
 </footer>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('show');
+    }
+</script>
 
 </body>
 </html>
