@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #E30613; /* HIV awareness red */
+    background-color: #E30613; /* Red */
     color: white;
     padding: 20px;
     text-align: center;
@@ -23,21 +23,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #E30613;
+    background-color: #E30613; /* Red */
     padding: 15px;
-}
-
-nav .menu-icon {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-nav .menu-icon .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
 }
 
 nav ul {
@@ -47,6 +34,7 @@ nav ul {
 
 nav ul li {
     margin: 0 20px;
+    position: relative;
 }
 
 nav ul li a {
@@ -55,78 +43,33 @@ nav ul li a {
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #E30613;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        padding: 20px;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-
-    nav .menu-icon {
-        display: flex;
-    }
+nav ul li:hover .dropdown-content {
+    display: block;
 }
 
-.hero {
-    background-color: rgba(12, 35, 64, 0.7); /* 50% transparent navy blue */
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-    min-height: 70vh;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
-.hero h1, .hero p {
-    font-size: 2.5em;
-    max-width: 80%;
-    margin: 0 auto;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+.dropdown-content li {
+    padding: 10px;
+    text-align: left;
 }
 
-.pillars {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    background-color: #f9f9f9;
+.dropdown-content li a {
+    color: #E30613; /* Red */
+    padding: 10px;
+    text-decoration: none;
+    display: block;
 }
 
-.pillar {
-    flex: 1;
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.pillar h2 {
-    color: #E30613;
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-
-.pillar p {
-    font-size: 1.2em;
-    color: #333;
-}
-
-@media (max-width: 768px) {
-    .pillars {
-        flex-direction: column;
-    }
-
-    .pillar {
-        margin-bottom: 20px;
-    }
+.dropdown-content li a:hover {
+    background-color: #f1f1f1;
 }
 
 footer {
