@@ -1,130 +1,161 @@
-/* General Styles */
+/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #ffffff; /* White background for sections */
 }
 
+/* Header */
 header {
-    background: #333;
-    color: white;
+    background-color: #d71920; /* Primary red */
+    color: #ffffff; /* White text */
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navigation Menu */
 nav {
-    background: #444;
-    padding: 1rem;
+    background-color: #1f355e; /* Navy blue */
+    padding: 1rem 0;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-}
-
-/* Hamburger Menu Icon */
-.menu-icon {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.menu-icon .bar {
-    background-color: #333;
-    height: 3px;
-    width: 100%;
-    margin: 3px 0;
-}
-
-/* Hide navigation menu on small screens */
-#nav-links {
-    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 3rem;
-    background: #f4f4f4;
+    padding: 4rem;
+    background-color: #f4f4f4; /* Light gray for contrast */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #d71920; /* Primary red */
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 2rem;
 }
 
 .cta-button {
-    padding: 0.75rem 1.5rem;
-    background-color: #007bff;
-    color: white;
+    padding: 1rem 2rem;
+    background-color: #d71920; /* Primary red */
+    color: #ffffff; /* White text */
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
 }
 
+.cta-button:hover {
+    background-color: #b51518; /* Darker red for hover effect */
+}
+
+/* Mission Section */
 .mission {
     text-align: center;
-    padding: 2rem;
+    padding: 3rem;
+    background-color: #ffffff; /* White */
 }
 
-/* Flexbox for Pillars Section */
+.mission h2 {
+    font-size: 2rem;
+    color: #1f355e; /* Navy blue */
+    margin-bottom: 1.5rem;
+}
+
+.mission p {
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+/* Pillars Section */
 .pillars {
     display: flex;
     justify-content: space-around;
-    gap: 1.5rem;
-    padding: 2rem;
-    background: #f9f9f9;
+    padding: 3rem;
+    background-color: #f9f9f9;
 }
 
 .pillar {
-    background: white;
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    text-align: center;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex: 1;
+    margin: 0 1rem;
+    text-align: center;
 }
 
 .pillar h3 {
-    color: #007bff;
+    color: #d71920; /* Primary red */
+    margin-bottom: 1rem;
 }
 
-/* Responsive Design for Small Screens */
+.pillar p {
+    font-size: 1rem;
+    color: #333333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1f355e; /* Navy blue */
+    color: white;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #f1c40f; /* Gold for links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #d4af37; /* Darker gold */
+}
+
+/* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
-    .menu-icon {
-        display: flex;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-    
     nav ul {
         flex-direction: column;
         align-items: center;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: #444;
-        display: none; /* Hide the menu by default */
-    }
-    
-    nav ul.active {
-        display: flex; /* Show menu when active */
-    }
-
-    nav ul li {
-        margin: 1rem 0;
     }
 
     .pillars {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .pillar {
+        margin-bottom: 2rem;
     }
 }
