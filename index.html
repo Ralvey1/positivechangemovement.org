@@ -14,8 +14,14 @@
     <h1>Positive Change Movement</h1>
 </header>
 
+<!-- Hamburger Menu -->
 <nav>
-    <ul>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <ul id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="peer-support.html">Peer Support</a></li>
@@ -39,7 +45,6 @@
 </section>
 
 <section class="pillars" aria-labelledby="pillars-heading">
-    <h2 id="pillars-heading" class="visually-hidden">Our Core Pillars</h2>
     <div class="pillar">
         <h3>Holistic Health</h3>
         <p>Our health programs are designed by and for people living with HIV, offering access to medical care, mental health services, and emotional support that meets the needs of our diverse community.</p>
@@ -66,7 +71,12 @@
     </div>
 </footer>
 
-<script src="script.js"></script> <!-- Link to your external JS file -->
+<script>
+    function toggleMenu() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
 
 </body>
 </html>
