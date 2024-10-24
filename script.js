@@ -1,4 +1,5 @@
+// script.js
 function toggleMenu() {
-    const navLinks = document.getElementById('nav-links');
-    navLinks.classList.toggle('show');
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.toggle("active");
 }
