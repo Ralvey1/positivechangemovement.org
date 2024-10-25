@@ -289,6 +289,44 @@ footer a:hover {
     list-style-type: disc;
     padding-left: 2rem;
 }
+/* Advocacy Page Specific Styles */
+.advocacy-hero {
+    text-align: center;
+    padding: 4rem;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+.advocacy-hero h2 {
+    font-size: 2.5rem;
+    color: #1f355e; /* Navy blue */
+}
+
+.advocacy-hero p {
+    font-size: 1.2rem;
+    color: #333333;
+    margin: 1rem auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.advocacy-content {
+    padding: 3rem;
+    background-color: #ffffff;
+}
+
+.advocacy-goals, .advocacy-actions, .advocacy-involvement {
+    margin-bottom: 2rem;
+}
+
+.advocacy-goals ul, .advocacy-actions ul, .advocacy-involvement ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.advocacy-goals ul li, .advocacy-actions ul li, .advocacy-involvement ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
 
 .peer-benefits ul li, .peer-services ul li, .peer-involvement ul li {
     margin-bottom: 0.5rem;
