@@ -5,54 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Positive Change Movement is a community of people living with HIV (PLWHIV) empowering each other through advocacy, peer support, education, and holistic care.">
     <title>Positive Change Movement</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
 </head>
 <body>
 
+<!-- Header Section -->
 <header>
     <h1>Positive Change Movement</h1>
 </header>
 
-<!-- Hamburger Menu -->
+<!-- Navigation Menu -->
 <nav>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
     <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="peersupport.html">Peer Support</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li> <!-- Link to About Us -->
+        <li><a href="peer-support.html">Peer Support</a></li>
         <li><a href="advocacy.html">Advocacy</a></li>
         <li><a href="resources.html">Resources</a></li>
-        <li><a href="blog.html">Blog</a></li> <!-- New Blog link -->
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
+
+<!-- Hero Section -->
 <section class="hero" role="banner">
     <div>
         <h1>Empowering People Living with HIV</h1>
         <p>We are a peer-led community, working together to provide support, advocacy, and education for people living with HIV. Together, we challenge stigma and create lasting change.</p>
-        <a href="peer-support.html" class="cta-button">Join Our Empowerment Network</a>
+        <a href="peer-support.html" class="cta-button">Join Our Support Network</a>
     </div>
 </section>
 
+<!-- Mission Section -->
 <section class="mission">
     <h2>Our Mission</h2>
-    <p>Positive Change Movement is a community-driven initiative <strong>Championing Health, Advocacy, and Nurturing Growth and Empowerment (CHANGE)</strong> for People Living with HIV (PLHIV). We aim to dismantle racism, homophobia, and transphobia to help end the HIV epidemic by promoting equity, understanding, and inclusiveness. Through peer support, decriminalization efforts, and stigma reduction, we empower PLHIV and work to dismantle systemic discrimination and inequality. Our programs are guided by lived experiences, ensuring that those most affected have a voice in shaping the future.</p>
+    <p>Positive Change Movement is a community-driven initiative for people living with HIV (PLWHIV). Our mission is to support, empower, and advocate for the well-being of our members, creating a stigma-free environment through education, holistic health, and social justice.</p>
 </section>
 
-<section class="vision">
-    <h2>Our Vision</h2>
-    <p>We envision a world where individuals from all backgrounds and identities thrive without facing discrimination, prejudice, or barriers. Positive Change Movement is dedicated to <strong>CHANGE</strong>—Championing Health, Advocacy, and Nurturing Growth and Empowerment—while actively dismantling oppressive systems. Our goal is to create a future where everyone, regardless of race, sexual orientation, gender identity, or health status, is empowered to live stigma-free, full, and healthy lives in a just and equitable society.</p>
-</section>
-
-<section class="pillars" aria-labelledby="pillars-heading">
+<!-- Pillars Section -->
+<section class="pillars">
     <div class="pillar">
         <h3>Holistic Health</h3>
         <p>Our health programs are designed by and for people living with HIV, offering access to medical care, mental health services, and emotional support that meets the needs of our diverse community.</p>
     </div>
     <div class="pillar">
         <h3>Peer Support</h3>
-        <p>We provide peer-led support groups, housing assistance, and counseling to help individuals navigate life with HIV, ensuring no one goes through it alone.</p>
+        <p>We provide empowerment groups, housing assistance, and counseling to help individuals navigate life with HIV, ensuring no one goes through it alone.</p>
     </div>
     <div class="pillar">
         <h3>Advocacy</h3>
@@ -64,15 +68,16 @@
     </div>
 </section>
 
-<!-- Footer with Icons -->
+<!-- Footer Section -->
 <footer>
     <p>&copy; 2024 Positive Change Movement | Peer Support, Advocacy, Education – Together, We Thrive</p>
     <div class="social-icons">
-        <a href="https://www.facebook.com/positivechangemovement.pcm/ target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/positive_change_movement/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/yourpage" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
     </div>
 </footer>
 
+<!-- JavaScript for Mobile Menu Toggle -->
 <script>
     function toggleMenu() {
         const navLinks = document.getElementById('nav-links');
