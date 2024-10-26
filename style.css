@@ -447,3 +447,64 @@ footer a:hover {
     padding-left: 1rem;
     margin: 1rem 0;
 }
+/* Join Network Section */
+.join-network {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.join-network h1 {
+    font-size: 2.5rem;
+    color: #1f355e;
+    margin-bottom: 1rem;
+}
+
+.join-network p, .join-network ul {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.join-network ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.join-network form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.join-network label {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.join-network input, .join-network select, .join-network textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cta-button {
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #d71920;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.cta-button:hover {
+    background-color: #b51518;
+}
