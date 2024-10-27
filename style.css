@@ -90,16 +90,20 @@ nav ul li a.active {
 
 .cta-button {
     padding: 1rem 2rem;
-    background-color: #d71920; /* Primary red */
+    background-color: #f4a641; /* Accent color */
     color: #ffffff; /* White text */
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2rem;
+    transition: background-color 0.3s ease;
     border: none;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .cta-button:hover {
-    background-color: #b51518; /* Darker red for hover effect */
+    background-color: #d71920; /* Darker color for hover effect */
+    color: #ffffff;
 }
 
 /* General Styles */
