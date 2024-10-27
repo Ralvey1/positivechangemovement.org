@@ -21,7 +21,7 @@
 
         /* Logo Styling */
         .logo {
-            width: 100px; /* Adjust width as needed */
+            width: 100px;
             height: auto;
             display: inline-block;
             vertical-align: middle;
@@ -36,14 +36,18 @@
             background-color: #E30613;
             color: white;
             padding: 20px;
-            text-align: center;
         }
 
+        header h1 {
+            font-size: 1.8em;
+            margin-left: 10px;
+        }
+
+        /* Navigation Styling */
         nav {
             background-color: #E30613;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
+            padding: 10px 0;
+            text-align: center;
         }
 
         nav a {
@@ -51,8 +55,14 @@
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.1em;
         }
 
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Section Styling */
         section {
             padding: 20px;
             max-width: 1200px;
@@ -68,8 +78,9 @@
         .resource {
             background-color: white;
             padding: 20px;
-            margin-bottom: 20px;
+            margin: 20px 0;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
         .resource h3 {
@@ -77,20 +88,22 @@
             margin-bottom: 10px;
         }
 
+        .resource a {
+            color: #E30613;
+            text-decoration: none;
+        }
+
+        .resource a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styling */
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 20px;
-        }
-
-        a {
-            color: #E30613;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
+            margin-top: 20px;
         }
 
     </style>
@@ -105,15 +118,13 @@
 </header>
 
 <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="peer-support.html">Peer Support</a></li>
-        <li><a href="advocacy.html">Advocacy</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="blog.html" class="active">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="peer-support.html">Peer Support</a>
+    <a href="advocacy.html">Advocacy</a>
+    <a href="resources.html">Resources</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
 </nav>
 
 <section>
@@ -182,4 +193,3 @@
 
 </body>
 </html>
-
