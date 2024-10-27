@@ -76,7 +76,85 @@ nav ul li a:active {
 nav ul li a.active {
     color: #f4f4f4; /* Highlight for the current page link */
 }
+/* Navigation styling */
+nav {
+    background-color: #E30613;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
 
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Visited and hover states for links */
+nav ul li a:visited {
+    color: white;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    color: #f4f4f4;
+}
+
+nav ul li a.active {
+    color: #f4f4f4;
+}
+
+/* Blog Listing Styles */
+.blog-listing {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.blog-listing h1 {
+    font-size: 2.5rem;
+    color: #1f355e;
+    margin-bottom: 1rem;
+}
+
+.blog-listing p {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.blog-posts {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+}
+
+.blog-posts li {
+    margin-bottom: 1.5rem;
+}
+
+.blog-posts li a {
+    color: #d71920;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-posts li a:hover {
+    text-decoration: underline;
+}
 /* Hamburger Menu Icon for mobile */
 .menu-icon {
     display: none;
