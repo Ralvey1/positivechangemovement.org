@@ -4,13 +4,13 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff;
     color: #333;
 }
 
 /* Header styling */
 header {
-    background-color: #d71920; /* Red background */
+    background-color: #d71920;
     color: white;
     text-align: center;
     padding: 2rem;
@@ -33,7 +33,7 @@ header h1 {
 /* Section Header Styling */
 h2 {
     font-size: 2rem;
-    color: #1f355e; /* Navy blue */
+    color: #1f355e;
     text-align: center;
     margin: 2rem 0 1rem 0;
 }
@@ -48,44 +48,6 @@ nav {
 
 nav ul {
     list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white; /* Color for normal, unvisited links */
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-/* Visited and hover states for links */
-nav ul li a:visited {
-    color: white; /* Same color as unvisited links */
-}
-
-nav ul li a:hover,
-nav ul li a:active {
-    color: #f4f4f4; /* Slightly lighter color on hover */
-}
-
-nav ul li a.active {
-    color: #f4f4f4; /* Highlight for the current page link */
-}
-/* Navigation styling */
-nav {
-    background-color: #E30613;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul {
-    list-style-type: none; /* Remove bullet points */
     padding: 0;
     margin: 0;
     display: flex;
@@ -102,16 +64,8 @@ nav ul li a {
     font-size: 1.2rem;
 }
 
-/* Visited and hover states for links */
-nav ul li a:visited {
-    color: white;
-}
-
 nav ul li a:hover,
-nav ul li a:active {
-    color: #f4f4f4;
-}
-
+nav ul li a:active,
 nav ul li a.active {
     color: #f4f4f4;
 }
@@ -130,14 +84,8 @@ nav ul li a.active {
     margin-bottom: 1rem;
 }
 
-.blog-listing p {
-    color: #333;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
 .blog-posts {
-    list-style-type: none; /* Remove bullets */
+    list-style-type: none;
     padding: 0;
 }
 
@@ -155,6 +103,7 @@ nav ul li a.active {
 .blog-posts li a:hover {
     text-decoration: underline;
 }
+
 /* Hamburger Menu Icon for mobile */
 .menu-icon {
     display: none;
@@ -176,18 +125,18 @@ nav ul li a.active {
 .hero, .about-hero, .peer-hero, .advocacy-hero {
     text-align: center;
     padding: 4rem;
-    background-color: #f4f4f4; /* Light gray for contrast */
+    background-color: #f4f4f4;
 }
 
 .hero h1, .about-hero h2, .peer-hero h2, .advocacy-hero h2 {
     font-size: 2.5rem;
-    color: #d71920; /* Primary red */
+    color: #d71920;
     margin-bottom: 1rem;
 }
 
 .hero p, .about-hero p, .peer-hero p, .advocacy-hero p {
     font-size: 1.2rem;
-    color: #333333;
+    color: #333;
     margin: 1rem auto;
     max-width: 800px;
     line-height: 1.6;
@@ -196,8 +145,8 @@ nav ul li a.active {
 /* CTA Button */
 .cta-button {
     padding: 1rem 2rem;
-    background-color: #f4a641; /* Accent color */
-    color: #ffffff; /* White text */
+    background-color: #f4a641;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -208,37 +157,27 @@ nav ul li a.active {
 }
 
 .cta-button:hover {
-    background-color: #d71920; /* Darker color for hover effect */
-    color: #ffffff;
+    background-color: #d71920;
 }
 
 /* Mission and Vision Sections */
 .mission, .vision {
     text-align: center;
     padding: 3rem;
-    margin: 0;
-}
-
-.mission {
-    background-color: #f9f9f9; /* Light gray background */
-}
-
-.vision {
-    background-color: #ffffff; /* White background */
+    background-color: #f9f9f9;
 }
 
 .mission h2, .vision h2 {
-    font-size: 2.5rem; /* Ensure both have the same font size */
-    color: #1f355e; /* Navy blue color for the headings */
+    font-size: 2.5rem;
+    color: #1f355e;
     margin-bottom: 1.5rem;
 }
 
 .mission p, .vision p {
     font-size: 1.1rem;
-    color: #333333;
+    color: #333;
     max-width: 800px;
     margin: 0 auto;
-    line-height: 1.6;
 }
 
 /* Pillars Section */
@@ -260,31 +199,26 @@ nav ul li a.active {
 }
 
 .pillar h3 {
-    color: #d71920; /* Primary red */
+    color: #d71920;
     margin-bottom: 1rem;
-}
-
-.pillar p {
-    font-size: 1rem;
-    color: #333333;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 2rem;
-    background-color: #1f355e; /* Navy blue */
+    background-color: #1f355e;
     color: white;
     font-size: 1rem;
 }
 
 footer a {
-    color: #f1c40f; /* Gold for links */
+    color: #f1c40f;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #d4af37; /* Darker gold */
+    color: #d4af37;
 }
 
 /* Blog Post Styles */
@@ -292,7 +226,6 @@ footer a:hover {
     max-width: 800px;
     margin: auto;
     padding: 2rem;
-    line-height: 1.6;
 }
 
 .blog-post h1 {
@@ -305,7 +238,6 @@ footer a:hover {
 .blog-post p {
     color: #333;
     font-size: 1.1rem;
-    margin-bottom: 1rem;
 }
 
 /* Join Network Section */
@@ -359,10 +291,6 @@ footer a:hover {
         flex-direction: column;
     }
 
-    .pillar {
-        margin-bottom: 2rem;
-    }
-
     .mission h2, .vision h2 {
         font-size: 2rem;
     }
@@ -370,93 +298,4 @@ footer a:hover {
     .mission p, .vision p {
         font-size: 1rem;
     }
-}
-
-    font-size: 2.5rem;
-    color: #1f355e; /* Adjust to match your color scheme */
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.blog-post p {
-    color: #333;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post img {
-    margin: 1.5rem 0;
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 5px;
-}
-
-.blog-post blockquote {
-    font-style: italic;
-    color: #555;
-    border-left: 4px solid #d71920; /* Adjust to match your color scheme */
-    padding-left: 1rem;
-    margin: 1rem 0;
-}
-/* Join Network Section */
-.join-network {
-    max-width: 800px;
-    margin: auto;
-    padding: 2rem;
-    text-align: center;
-}
-
-.join-network h1 {
-    font-size: 2.5rem;
-    color: #1f355e;
-    margin-bottom: 1rem;
-}
-
-.join-network p, .join-network ul {
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.6;
-}
-
-.join-network ul {
-    list-style-type: disc;
-    padding-left: 2rem;
-    margin-bottom: 2rem;
-    text-align: left;
-}
-
-.join-network form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.join-network label {
-    font-weight: bold;
-    margin-top: 1rem;
-}
-
-.join-network input, .join-network select, .join-network textarea {
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.cta-button {
-    margin-top: 1.5rem;
-    padding: 1rem 2rem;
-    background-color: #d71920;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    border: none;
-}
-
-.cta-button:hover {
-    background-color: #b51518;
 }
