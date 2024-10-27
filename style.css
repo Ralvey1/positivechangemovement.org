@@ -81,9 +81,23 @@ header {
 /* Section Header Styling */
 h2 {
     font-size: 2rem;
-    color: #1f355e; /* Navy blue for section titles */
+    color: #1f355e; /* Navy blue for consistency */
     text-align: center;
     margin: 2rem 0 1rem 0;
+}
+
+section {
+    background-color: #f4f4f4; /* Light gray for contrast */
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.resource {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Hero Section */
