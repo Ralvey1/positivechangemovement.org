@@ -5,6 +5,7 @@ body {
     padding: 0;
     line-height: 1.6;
     background-color: #ffffff; /* White background */
+    color: #333;
 }
 
 /* Header styling */
@@ -20,6 +21,15 @@ header h1 {
     font-size: 2.5rem;
 }
 
+/* Logo styling */
+.logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
 /* Section Header Styling */
 h2 {
     font-size: 2rem;
@@ -28,7 +38,24 @@ h2 {
     margin: 2rem 0 1rem 0;
 }
 
-/* Navigation link styling */
+/* Navigation styling */
+nav {
+    background-color: #E30613;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
 nav ul li a {
     color: white; /* Color for normal, unvisited links */
     text-decoration: none;
@@ -36,23 +63,21 @@ nav ul li a {
     font-size: 1.2rem;
 }
 
-/* Style visited links to be the same color */
+/* Visited and hover states for links */
 nav ul li a:visited {
     color: white; /* Same color as unvisited links */
 }
 
-/* Hover and active states for links */
 nav ul li a:hover,
 nav ul li a:active {
     color: #f4f4f4; /* Slightly lighter color on hover */
 }
 
-/* Optional: Style for the active page link */
 nav ul li a.active {
     color: #f4f4f4; /* Highlight for the current page link */
 }
 
-/* Hamburger Menu Icon */
+/* Hamburger Menu Icon for mobile */
 .menu-icon {
     display: none;
     cursor: pointer;
@@ -70,24 +95,27 @@ nav ul li a.active {
 }
 
 /* Hero Section */
-.hero {
+.hero, .about-hero, .peer-hero, .advocacy-hero {
     text-align: center;
     padding: 4rem;
     background-color: #f4f4f4; /* Light gray for contrast */
 }
 
-.hero h1 {
+.hero h1, .about-hero h2, .peer-hero h2, .advocacy-hero h2 {
     font-size: 2.5rem;
     color: #d71920; /* Primary red */
     margin-bottom: 1rem;
 }
 
-.hero p {
+.hero p, .about-hero p, .peer-hero p, .advocacy-hero p {
     font-size: 1.2rem;
     color: #333333;
-    margin-bottom: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    line-height: 1.6;
 }
 
+/* CTA Button */
 .cta-button {
     padding: 1rem 2rem;
     background-color: #f4a641; /* Accent color */
@@ -106,15 +134,6 @@ nav ul li a.active {
     color: #ffffff;
 }
 
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #ffffff;
-}
-
 /* Mission and Vision Sections */
 .mission, .vision {
     text-align: center;
@@ -123,11 +142,11 @@ body {
 }
 
 .mission {
-    background-color: #f9f9f9; /* Light gray background for the Mission section */
+    background-color: #f9f9f9; /* Light gray background */
 }
 
 .vision {
-    background-color: #ffffff; /* White background for the Vision section */
+    background-color: #ffffff; /* White background */
 }
 
 .mission h2, .vision h2 {
@@ -137,21 +156,11 @@ body {
 }
 
 .mission p, .vision p {
-    font-size: 1.1rem; /* Same font size for both sections */
+    font-size: 1.1rem;
     color: #333333;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
-}
-
-/* Responsive Design for smaller screens */
-@media (max-width: 768px) {
-    .mission h2, .vision h2 {
-        font-size: 2rem;
-    }
-    .mission p, .vision p {
-        font-size: 1rem;
-    }
 }
 
 /* Pillars Section */
@@ -200,7 +209,55 @@ footer a:hover {
     color: #d4af37; /* Darker gold */
 }
 
-/* Responsive Design for Mobile */
+/* Blog Post Styles */
+.blog-post {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+.blog-post h1 {
+    font-size: 2.5rem;
+    color: #1f355e;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.blog-post p {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Join Network Section */
+.join-network {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.join-network h1 {
+    font-size: 2.5rem;
+    color: #1f355e;
+    margin-bottom: 1rem;
+}
+
+.join-network p, .join-network ul {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.join-network ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         display: none;
@@ -227,209 +284,16 @@ footer a:hover {
     .pillar {
         margin-bottom: 2rem;
     }
-}
-/* About Us Specific Styles */
-.about-hero {
-    text-align: center;
-    padding: 4rem;
-    background-color: #f4f4f4; /* Light gray background */
+
+    .mission h2, .vision h2 {
+        font-size: 2rem;
+    }
+
+    .mission p, .vision p {
+        font-size: 1rem;
+    }
 }
 
-.about-hero h2 {
-    font-size: 2.5rem;
-    color: #1f355e; /* Navy blue */
-}
-
-.about-hero p {
-    font-size: 1.2rem;
-    color: #333333;
-    margin: 1rem auto;
-    max-width: 800px;
-    line-height: 1.6;
-}
-
-.about-content {
-    padding: 3rem;
-    background-color: #ffffff; /* White background */
-}
-
-.our-story, .our-values, .our-team {
-    margin-bottom: 2rem;
-}
-
-.our-values ul {
-    list-style-type: disc;
-    padding-left: 2rem;
-}
-
-.our-values ul li {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-}
-/* Peer Support Page Specific Styles */
-.peer-hero {
-    text-align: center;
-    padding: 4rem;
-    background-color: #f4f4f4; /* Light gray background */
-}
-
-.peer-hero h2 {
-    font-size: 2.5rem;
-    color: #1f355e; /* Navy blue */
-}
-
-.peer-hero p {
-    font-size: 1.2rem;
-    color: #333333;
-    margin: 1rem auto;
-    max-width: 800px;
-    line-height: 1.6;
-}
-
-.peer-content {
-    padding: 3rem;
-    background-color: #ffffff;
-}
-
-.peer-benefits, .peer-services, .peer-involvement {
-    margin-bottom: 2rem;
-}
-
-.peer-benefits ul, .peer-services ul, .peer-involvement ul {
-    list-style-type: disc;
-    padding-left: 2rem;
-}
-/* Advocacy Page Specific Styles */
-.advocacy-hero {
-    text-align: center;
-    padding: 4rem;
-    background-color: #f4f4f4; /* Light gray background */
-}
-
-.advocacy-hero h2 {
-    font-size: 2.5rem;
-    color: #1f355e; /* Navy blue */
-}
-
-.advocacy-hero p {
-    font-size: 1.2rem;
-    color: #333333;
-    margin: 1rem auto;
-    max-width: 800px;
-    line-height: 1.6;
-}
-
-.advocacy-content {
-    padding: 3rem;
-    background-color: #ffffff;
-}
-
-.advocacy-goals, .advocacy-actions, .advocacy-involvement {
-    margin-bottom: 2rem;
-}
-
-.advocacy-goals ul, .advocacy-actions ul, .advocacy-involvement ul {
-    list-style-type: disc;
-    padding-left: 2rem;
-}
-
-.advocacy-goals ul li, .advocacy-actions ul li, .advocacy-involvement ul li {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-}
-
-.peer-benefits ul li, .peer-services ul li, .peer-involvement ul li {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-}
-/* Blog Listing Styles */
-.blog-listing {
-    max-width: 800px;
-    margin: auto;
-    padding: 2rem;
-    line-height: 1.6;
-    text-align: center;
-}
-
-.blog-listing h1 {
-    font-size: 2.5rem;
-    color: #1f355e;
-    margin-bottom: 1rem;
-}
-
-.blog-listing p {
-    color: #333;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.blog-posts {
-    list-style-type: none;
-    padding: 0;
-}
-
-.blog-posts li {
-    margin-bottom: 1.5rem;
-}
-
-.blog-posts li a {
-    color: #d71920;
-    font-size: 1.2rem;
-    text-decoration: none;
-}
-
-.blog-posts li a:hover {
-    text-decoration: underline;
-}
-/* Blog Listing Styles */
-.blog-listing {
-    max-width: 800px;
-    margin: auto;
-    padding: 2rem;
-    line-height: 1.6;
-    text-align: center;
-}
-
-.blog-listing h1 {
-    font-size: 2.5rem;
-    color: #1f355e; /* Adjust to match your color scheme */
-    margin-bottom: 1rem;
-}
-
-.blog-listing p {
-    color: #333;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.blog-posts {
-    list-style-type: none;
-    padding: 0;
-}
-
-.blog-posts li {
-    margin-bottom: 1.5rem;
-}
-
-.blog-posts li a {
-    color: #d71920; /* Adjust to match your color scheme */
-    font-size: 1.2rem;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.blog-posts li a:hover {
-    text-decoration: underline;
-}
-/* Blog Post Styles */
-.blog-post {
-    max-width: 800px;
-    margin: auto;
-    padding: 2rem;
-    line-height: 1.6;
-}
-
-.blog-post h1 {
     font-size: 2.5rem;
     color: #1f355e; /* Adjust to match your color scheme */
     text-align: center;
