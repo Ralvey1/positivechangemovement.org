@@ -5,142 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Comprehensive resources for people living with HIV, including housing, healthcare, and prevention services.">
     <title>Resources | Positive Change Movement</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* Logo Styling */
-        .logo {
-            width: 100px;
-            height: auto;
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 15px;
-        }
-
-        /* Header Styling */
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #E30613;
-            color: white;
-            padding: 20px;
-        }
-
-        header h1 {
-            font-size: 1.8em;
-            margin-left: 10px;
-        }
-
-        /* Navigation Styling */
-        nav {
-            background-color: #E30613;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Main Section Styling */
-        section {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        h2 {
-            margin-top: 40px;
-            color: #E30613;
-            text-align: center;
-        }
-
-        .resource {
-            background-color: white;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .resource h3 {
-            color: #E30613;
-            margin-bottom: 10px;
-        }
-
-        .resource a {
-            color: #E30613;
-            text-decoration: none;
-        }
-
-        .resource a:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer Styling */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
 </head>
 <body>
 
+<!-- Header Section -->
 <header>
     <a href="index.html">
-        <img src="PCM_logo.jpeg" alt="Positive Change Movement Logo" class="logo">
+        <img src="images/PCM_logo.jpeg" alt="Positive Change Movement Logo" class="logo">
     </a>
     <h1>Community Resources</h1>
 </header>
 
+<!-- Navigation Menu -->
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="peer-support.html">Peer Support</a>
-    <a href="advocacy.html">Advocacy</a>
-    <a href="resources.html">Resources</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="peersupport.html">Peer Support</a></li>
+        <li><a href="advocacy.html">Advocacy</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 </nav>
 
+<!-- Main Content Section -->
 <section>
     <h2>Healthcare Resources</h2>
 
     <div class="resource">
         <h3>Derby City PrEP Clinic</h3>
         <p>1101 E. Washington Street, Suite A, Louisville, KY</p>
-        <a href="https://derbycityprep.org/">Visit Derby City PrEP</a><br>
+        <a href="https://derbycityprep.org/" target="_blank" rel="noopener">Visit Derby City PrEP</a><br>
         Phone: 502-546-6069
     </div>
 
     <div class="resource">
         <h3>University of Louisville Physicians</h3>
         <p>401 E Chestnut St, Suite 370, Louisville, KY 40202</p>
-        <a href="https://www.uoflphysicians.com/">Visit U of L Physicians</a><br>
+        <a href="https://www.uoflphysicians.com/" target="_blank" rel="noopener">Visit U of L Physicians</a><br>
         Phone: 502-588-4500
     </div>
 
@@ -149,26 +53,26 @@
     <div class="resource">
         <h3>House of Ruth</h3>
         <p>502-587-5080</p>
-        <a href="https://houseofruth.net/what-we-do/emergency-and-family-services/">Visit House of Ruth</a>
+        <a href="https://houseofruth.net/what-we-do/emergency-and-family-services/" target="_blank" rel="noopener">Visit House of Ruth</a>
     </div>
 
     <div class="resource">
         <h3>Louisville Metro Housing Authority</h3>
         <p>502-569-3400</p>
-        <a href="http://www.lmha1.org/">Visit Louisville Metro Housing Authority</a>
+        <a href="http://www.lmha1.org/" target="_blank" rel="noopener">Visit Louisville Metro Housing Authority</a>
     </div>
 
     <h2>Prevention Services</h2>
 
     <div class="resource">
         <h3>Greater Than AIDS PrEP Locator (National)</h3>
-        <a href="https://www.greaterthan.org/get-prep/">Find PrEP Providers Nationwide</a>
+        <a href="https://www.greaterthan.org/get-prep/" target="_blank" rel="noopener">Find PrEP Providers Nationwide</a>
     </div>
 
     <div class="resource">
         <h3>Planned Parenthood of Indiana and Kentucky</h3>
         <p>842 S 7th St, Louisville, KY 40203</p>
-        <a href="https://www.plannedparenthood.org/">Visit Planned Parenthood</a><br>
+        <a href="https://www.plannedparenthood.org/" target="_blank" rel="noopener">Visit Planned Parenthood</a><br>
         Phone: 502-584-2473
     </div>
 
@@ -177,18 +81,23 @@
     <div class="resource">
         <h3>Coalition for the Homeless</h3>
         <p>502-637-2337</p>
-        <a href="https://louhomeless.org/">Visit Coalition for the Homeless</a>
+        <a href="https://louhomeless.org/" target="_blank" rel="noopener">Visit Coalition for the Homeless</a>
     </div>
 
     <div class="resource">
         <h3>St. John Center for Homeless Men</h3>
         <p>502-568-6758</p>
-        <a href="https://www.stjohncenter.org/">Visit St. John Center</a>
+        <a href="https://www.stjohncenter.org/" target="_blank" rel="noopener">Visit St. John Center</a>
     </div>
 </section>
 
+<!-- Footer Section -->
 <footer>
-    <p>&copy; 2024 Positive Change Movement</p>
+    <p>&copy; 2024 Positive Change Movement | Peer Support, Advocacy, Education – Together, We Thrive</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/positive_change_movement/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
 </footer>
 
 </body>
