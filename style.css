@@ -127,6 +127,20 @@ section {
     line-height: 1.6;
 }
 
+.section-title {
+    margin-top: 2rem; /* Adjust as needed for space above each title */
+    margin-bottom: 1rem; /* Adjust as needed for space below each title */
+    color: #1f355e; /* Navy Blue for the titles */
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 1px solid #d4af37; /* Adds a gold line for separation */
+    padding-bottom: 0.5rem;
+}
+
+.section-content {
+    margin-bottom: 3rem; /* Extra spacing after each section */
+}
+
 /* CTA Button */
 .cta-button {
     padding: 1rem 2rem;
