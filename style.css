@@ -45,7 +45,7 @@ nav {
 }
 
 nav ul {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
@@ -62,36 +62,36 @@ nav ul li a {
     font-size: 1.1rem;
 }
 
-nav ul li a:hover,
-nav ul li a:active,
+nav ul li a:hover {
+    color: #FFD700; /* Gold color for hover effect */
+}
 nav ul li a.active {
-    color: #f4a641; /* Accent color for hover and active links */
-}
-
-/* Uniform Navigation Bar Style */
-nav {
-    background-color: #1f355e; /* Navy blue for all pages */
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-}
-
-/* Header Styling */
-header {
-    background-color: #d71920; /* Consistent red header */
-    color: white;
-    padding: 1.5rem;
-    text-align: center;
+    color: #FFD700; /* Gold for active text */
+    background-color: rgba(31, 53, 94, 0.8); /* Darker navy background for contrast */
+    padding: 5px 10px;
+    border-radius: 5px; /* Rounded corners */
 }
 
 /* Section Header Styling */
-h2 {
+h2.section-title {
     font-size: 2rem;
-    color: #1f355e; /* Navy blue for consistency */
+    color: #1f355e; /* Navy blue for contrast */
     text-align: center;
     margin: 2rem 0 1rem 0;
+    border-bottom: 2px solid #FFD700; /* Gold line for section separation */
+    padding-bottom: 0.5rem;
 }
 
+/* Section Content Styling */
+.section-content {
+    max-width: 800px;
+    margin: 1rem auto 3rem auto; /* Centered with additional bottom margin for separation */
+    line-height: 1.6;
+    color: #333333;
+    text-align: center;
+}
+
+/* Individual Section Styling */
 section {
     background-color: #f4f4f4; /* Light gray for contrast */
     padding: 20px;
@@ -178,34 +178,6 @@ section {
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
-}
-
-/* Pillars Section */
-.pillars {
-    display: flex;
-    justify-content: space-around;
-    padding: 3rem;
-    background-color: #f9f9f9; /* Light gray */
-}
-
-.pillar {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    margin: 0 1rem;
-    text-align: center;
-}
-
-.pillar h3 {
-    color: #d71920; /* Red for pillar headings */
-    margin-bottom: 1rem;
-}
-
-.pillar p {
-    font-size: 1rem;
-    color: #333333;
 }
 
 /* Footer */
