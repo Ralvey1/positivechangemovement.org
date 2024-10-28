@@ -10,10 +10,10 @@ body {
 
 /* Header styling */
 header {
-    background-color: #d71920; /* Main red color */
+    background: linear-gradient(135deg, #d71920, #ff6347); /* From red to softer orange-red */
     color: white;
     text-align: center;
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 header h1 {
