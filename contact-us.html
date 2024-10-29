@@ -3,16 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Positive Change Movement for more information on our initiatives or to get involved.">
     <title>Contact Us - Positive Change Movement</title>
     <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
 </head>
 <body>
 
+<!-- Header Section with Logo -->
 <header>
+    <a href="index.html">
+        <img src="PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
+    </a>
     <h1>Contact Us</h1>
-    <p>We’d love to hear from you! Please fill out the form below and we’ll get back to you as soon as possible.</p>
+    <p class="header-subtitle">We’d love to hear from you! Please fill out the form below.</p>
 </header>
 
+<!-- Navigation Menu -->
+<nav>
+    <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="peersupport.html">Peer Support</a></li>
+        <li><a href="advocacy.html">Advocacy</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Contact Form Section -->
 <section class="contact-form-section">
     <form action="contact_process.php" method="POST" class="contact-form">
         <label for="name">Name:</label>
@@ -31,5 +51,22 @@
     </form>
 </section>
 
+<!-- Footer Section with Social Icons -->
+<footer>
+    <p>&copy; 2024 Positive Change Movement | Peer Support, Advocacy, Education – Together, We Thrive</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/positive_change_movement/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
+
 </body>
 </html>
+
