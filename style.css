@@ -10,7 +10,7 @@ body {
 
 /* Header styling */
 header {
-    background: linear-gradient(135deg, #d71920, #ff6347); /* From red to softer orange-red */
+    background: #E30613; 
     color: white;
     text-align: center;
     padding: 2rem;
