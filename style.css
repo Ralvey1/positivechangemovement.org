@@ -195,7 +195,76 @@ html {
     color: #333;
     line-height: 1.6;
 }
+/* Initiatives Section */
+.featured-programs {
+    background-color: #FFFFFF;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #1f355e; /* Navy */
+}
 
+.featured-programs .section-title {
+    font-size: 2.5rem;
+    color: #1f355e; /* Navy */
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #FFD700; /* Gold */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.programs {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.program {
+    background-color: #F9F9F9;
+    border: 1px solid #E30613; /* HIV Awareness Red */
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.program img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 2px solid #FFD700; /* Gold */
+}
+
+.program h3 {
+    color: #E30613; /* HIV Awareness Red */
+    margin-bottom: 1rem;
+}
+
+.program p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.program .cta-button {
+    padding: 0.5rem 1rem;
+    background-color: #FFD700; /* Gold */
+    color: #1f355e; /* Navy */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.program .cta-button:hover {
+    background-color: #E30613; /* HIV Awareness Red */
+    color: #FFFFFF; /* White */
+}
 
 /* Blog Image Styling */
 .blog-image {
