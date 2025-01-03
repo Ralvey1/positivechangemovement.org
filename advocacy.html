@@ -14,7 +14,7 @@
 
 <header>
     <a href="index.html">
-        <img src="PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
+        <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
     </a>
     <h1>Advocacy</h1>
     <p class="header-subtitle">Dedicated to advocating for People Living with HIV, those at risk, and the marginalized communities most impacted by HIV.</p>
@@ -61,6 +61,7 @@
             <li><strong>Community Outreach:</strong> Partnering with local organizations to raise awareness and provide resources for PLHIV.</li>
             <li><strong>Educational Campaigns:</strong> Offering workshops and materials to educate the public on HIV-related issues and to combat misinformation.</li>
         </ul>
+        <img src="images/communitystrength.jpg" alt="Advocacy in Action" class="section-image">
     </div>
 
     <div class="advocacy-involvement">
@@ -75,6 +76,9 @@
     </div>
 </section>
 
+<!-- Back to Top Button -->
+<div class="back-to-top" onclick="scrollToTop()">&#8679;</div>
+
 <!-- Footer with Icons -->
 <footer>
     <p>&copy; 2024 Positive Change Movement | Peer Support, Advocacy, Education – Together, We Thrive</p>
@@ -85,9 +89,15 @@
 </footer>
 
 <script>
+    // Mobile menu toggle
     function toggleMenu() {
         const navLinks = document.getElementById('nav-links');
         navLinks.classList.toggle('active');
+    }
+
+    // Back to top functionality
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 </script>
 
