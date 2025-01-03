@@ -224,3 +224,48 @@ html {
 .related-posts ul li a:hover {
     text-decoration: underline;
 }
+/* Contact Form Section */
+.contact-form-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #E30613;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #FFD700;
+    color: #333;
+}
+
+.contact-form label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
+}
