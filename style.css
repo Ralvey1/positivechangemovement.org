@@ -179,3 +179,48 @@ html {
     padding: 2rem;
     border-radius: 10px;
     box-shadow
+/* Blog Image Styling */
+.blog-image {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Highlighted Quotes */
+.highlighted-quote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #E30613;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+/* Related Posts Section */
+.related-posts h2 {
+    font-size: 1.8rem;
+    color: #1f355e;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.related-posts ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.related-posts ul li {
+    margin: 10px 0;
+}
+
+.related-posts ul li a {
+    color: #E30613;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.related-posts ul li a:hover {
+    text-decoration: underline;
+}
