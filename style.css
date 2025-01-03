@@ -178,7 +178,9 @@ html {
     background-color: #ffffff;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Blog Image Styling */
 .blog-image {
     width: 100%;
@@ -224,6 +226,7 @@ html {
 .related-posts ul li a:hover {
     text-decoration: underline;
 }
+
 /* Contact Form Section */
 .contact-form-section {
     max-width: 800px;
@@ -266,6 +269,10 @@ html {
 
 .contact-form label {
     text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
     font-weight: bold;
     font-size: 1rem;
 }
