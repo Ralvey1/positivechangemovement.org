@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Positive Change Movement</title>
     <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- For icons -->
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
         <a href="index.html">
-            <img src="PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
+            <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
         </a>
         <h1>Positive Change Movement</h1>
+        <p class="header-subtitle">Insights, Stories, and Updates</p>
     </header>
 
     <!-- Navigation -->
@@ -35,9 +38,32 @@
         <p>Explore our latest articles, insights, and updates on topics related to HIV, advocacy, and community support.</p>
         
         <ul class="blog-posts">
-            <!-- Link to the 'Breaking the Silence' blog article -->
-            <li><a href="breaking-the-silence.html">Breaking the Silence: Confronting Stigma Around Identity and Health</a></li>
-            <!-- Add more blog post links here as you create new articles -->
+            <!-- Blog Post 1 -->
+            <li class="blog-post">
+                <img src="images/communitystrength.jpg" alt="Breaking the Silence" class="blog-thumbnail">
+                <div class="blog-details">
+                    <a href="breaking-the-silence.html" class="blog-title">Breaking the Silence: Confronting Stigma Around Identity and Health</a>
+                    <p class="blog-excerpt">Discover how communities can confront stigma surrounding HIV and health identity, paving the way for empowerment.</p>
+                </div>
+            </li>
+
+            <!-- Blog Post 2 -->
+            <li class="blog-post">
+                <img src="images/TakeCare.jpg" alt="Care and Advocacy" class="blog-thumbnail">
+                <div class="blog-details">
+                    <a href="care-and-advocacy.html" class="blog-title">Care and Advocacy: Building a Supportive Network</a>
+                    <p class="blog-excerpt">Learn how advocacy groups and communities are creating a strong support system for people living with HIV.</p>
+                </div>
+            </li>
+            
+            <!-- Pagination Placeholder -->
+            <div class="pagination">
+                <a href="#">&laquo; Previous</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">Next &raquo;</a>
+            </div>
         </ul>
     </section>
 
@@ -50,6 +76,9 @@
         </div>
     </footer>
 
+    <!-- Optional JavaScript -->
+    <script>
+        // Add any interactivity or scripts here (e.g., pagination functionality).
+    </script>
 </body>
 </html>
-
