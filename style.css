@@ -6,20 +6,19 @@ body {
     line-height: 1.6;
     background-color: #ffffff;
     color: #333;
+    text-align: center;
 }
 
 /* Header Styling */
 header {
-    background-color: #E30613; /* HIV Awareness Red */
+    background-color: #E30613;
     color: white;
-    text-align: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
 }
 
-.logo {
+header .logo {
     max-width: 150px;
     margin: 0 auto 1rem;
-    display: block;
 }
 
 header h1 {
@@ -34,14 +33,12 @@ header p {
 
 .cta-button {
     padding: 10px 20px;
-    background-color: #FFD700; /* Gold */
-    color: #1f355e; /* Navy */
+    background-color: #FFD700;
+    color: #1f355e;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
     display: inline-block;
-    margin-top: 1rem;
+    font-size: 1rem;
 }
 
 .cta-button:hover {
@@ -49,13 +46,8 @@ header p {
     color: #E30613;
 }
 
-/* Core Values Styling */
-.core-values {
-    text-align: center;
-    padding: 2rem;
-}
-
-.pillars {
+/* Core Values Section */
+.core-values .pillars {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -63,25 +55,51 @@ header p {
 }
 
 .pillar {
-    background-color: #fff;
-    border: 2px solid #E30613;
+    background: #fff;
+    border: 1px solid #E30613;
     border-radius: 10px;
     padding: 1rem;
     text-align: center;
-    flex: 1;
-    margin: 10px;
-    max-width: 300px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pillar img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .pillar h3 {
     color: #E30613;
-    font-size: 1.5rem;
 }
 
-.pillar p {
-    font-size: 1rem;
-    color: #333;
+/* Initiatives Section */
+.initiatives .programs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.program {
+    background: #fff;
+    border: 1px solid #FFD700;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.program img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.program h3 {
+    color: #FFD700;
 }
 
 /* Navigation Styling */
