@@ -3,94 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover how Positive Change Movement provides peer support for People Living with HIV, fostering connection, empathy, and empowerment.">
-    <title>Peer Support - Positive Change Movement</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS file -->
+    <meta name="description" content="Discover the benefits of Peer Support and how Positive Change Movement fosters connection and resilience.">
+    <title>Peer Support | Positive Change Movement</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to shared CSS file -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        /* Custom inline styles for page updates */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #E30613; /* Red Background */
+            color: white;
+            text-align: center;
+            padding: 6rem 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero .logo {
+            max-width: 400px; /* Increased logo size */
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem; /* Larger heading */
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem; /* Larger subtitle */
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #1f355e;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a.active {
+            color: #FFD700; /* Gold */
+            border-bottom: 2px solid #FFD700;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        /* Section Styling */
+        section {
+            text-align: center;
+            padding: 4rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #1f355e;
+            margin-bottom: 1.5rem;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f355e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer .social-icons {
+            margin-top: 1rem;
+        }
+
+        footer .social-icons a {
+            color: #FFD700;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons a:hover {
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
-<!-- Header Section -->
-<header class="hero" style="background-color: #E30613; color: white; text-align: center; padding: 40px 20px;">
-    <a href="index.html">
-        <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo" style="max-width: 120px; margin-bottom: 20px;">
-    </a>
+<!-- Hero Section -->
+<header class="hero">
+    <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
     <h1>Peer Support</h1>
-    <p style="font-size: 1.2rem;">Building a community of understanding, resilience, and support.</p>
+    <p>Building a community of understanding, resilience, and support.</p>
 </header>
 
-<!-- Navigation -->
-<nav style="background-color: #1f355e; padding: 10px; text-align: center;">
-    <ul style="list-style: none; display: flex; justify-content: center; padding: 0; margin: 0;">
-        <li><a href="index.html" style="color: white; text-decoration: none; margin: 0 15px;">Home</a></li>
-        <li><a href="aboutus.html" style="color: white; text-decoration: none; margin: 0 15px;">About Us</a></li>
-        <li><a href="peersupport.html" style="color: #FFD700; text-decoration: none; margin: 0 15px; font-weight: bold;">Peer Support</a></li>
-        <li><a href="advocacy.html" style="color: white; text-decoration: none; margin: 0 15px;">Advocacy</a></li>
-        <li><a href="resources.html" style="color: white; text-decoration: none; margin: 0 15px;">Resources</a></li>
-        <li><a href="blog.html" style="color: white; text-decoration: none; margin: 0 15px;">Blog</a></li>
-        <li><a href="contact.html" style="color: white; text-decoration: none; margin: 0 15px;">Contact</a></li>
+<!-- Navigation Menu -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="peersupport.html" class="active">Peer Support</a></li>
+        <li><a href="advocacy.html">Advocacy</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
 
-<!-- Peer Support Hero Section -->
-<section class="peer-hero" style="padding: 40px; text-align: center; background-color: #f9f9f9;">
-    <h2 style="color: #1f355e;">Why Peer Support Matters</h2>
-    <p style="max-width: 800px; margin: 20px auto; font-size: 1.2rem;">Peer support is at the heart of Positive Change Movement’s mission. By connecting people with shared experiences, we foster understanding, reduce stigma, and build a supportive community for People Living with HIV (PLHIV).</p>
+<!-- Main Content Section -->
+<section>
+    <h2>Why Peer Support Matters</h2>
+    <p>Peer support is at the heart of Positive Change Movement’s mission. By connecting people with shared experiences, we foster understanding, reduce stigma, and build a supportive community for People Living with HIV (PLHIV).</p>
 </section>
 
-<!-- Peer Support Content -->
-<section class="peer-content" style="padding: 40px;">
-    <!-- Benefits Section -->
-    <div class="peer-benefits" style="margin-bottom: 40px;">
-        <h2 style="color: #1f355e; text-align: center;">Benefits of Peer Support</h2>
-        <ul style="max-width: 800px; margin: 20px auto; padding: 0; list-style-type: none;">
-            <li style="margin-bottom: 20px;"><strong>Empathy & Understanding:</strong> Peer support connects individuals who can relate to each other’s experiences, providing a unique level of empathy and insight.</li>
-            <li style="margin-bottom: 20px;"><strong>Reducing Isolation:</strong> Being part of a community helps reduce feelings of isolation, offering a space for connection and friendship.</li>
-            <li><strong>Improving Health Outcomes:</strong> Studies show that peer support can improve mental health, increase adherence to treatment, and enhance overall well-being.</li>
-        </ul>
-    </div>
-
-    <!-- Services Section -->
-    <div class="peer-services" style="margin-bottom: 40px;">
-        <h2 style="color: #1f355e; text-align: center;">Our Peer Support Services</h2>
-        <p style="max-width: 800px; margin: 20px auto; text-align: center;">Positive Change Movement offers a variety of peer-led support services, including:</p>
-        <ul style="max-width: 800px; margin: 20px auto; padding: 0; list-style-type: none;">
-            <li style="margin-bottom: 20px;"><strong>Empowerment Groups:</strong> Regularly scheduled empowerment groups where PLHIV can share experiences, challenges, and victories in a safe, confidential environment.</li>
-            <li style="margin-bottom: 20px;"><strong>One-on-One Peer Counseling:</strong> Individual peer counseling sessions that offer personalized support and guidance from trained peers.</li>
-            <li><strong>Workshops & Events:</strong> Educational and social events that focus on health, wellness, and empowerment for our community.</li>
-        </ul>
-    </div>
-
-    <!-- Get Involved Section -->
-    <div class="peer-involvement">
-        <h2 style="color: #1f355e; text-align: center;">Get Involved</h2>
-        <p style="max-width: 800px; margin: 20px auto; text-align: center;">There are many ways to engage with our peer support community:</p>
-        <ul style="max-width: 800px; margin: 20px auto; padding: 0; list-style-type: none;">
-            <li style="margin-bottom: 20px;"><strong>Join a Group:</strong> Become part of an empowerment group to connect with others who share your journey.</li>
-            <li style="margin-bottom: 20px;"><strong>Become a Peer Leader:</strong> Use your lived experience to support others by training as a peer leader or counselor.</li>
-            <li><strong>Attend Events:</strong> Join us for community events to learn, connect, and celebrate together.</li>
-        </ul>
-        <p style="text-align: center;">Interested in getting involved? <a href="contact.html" style="color: #E30613;">Contact us</a> to learn more about how you can participate in or support our peer-led initiatives.</p>
-    </div>
+<section>
+    <h2>Benefits of Peer Support</h2>
+    <p>Empathy, understanding, and shared experiences are the foundation of effective peer support, helping individuals navigate their journey with resilience and positivity.</p>
 </section>
 
 <!-- Footer -->
-<footer style="background-color: #1f355e; color: white; text-align: center; padding: 20px;">
-    <p>&copy; 2024 Positive Change Movement | Peer Support, Advocacy, Education – Together, We Thrive</p>
-    <div class="social-icons" style="margin-top: 10px;">
-        <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank" aria-label="Facebook" style="color: #FFD700; margin-right: 10px;"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/positive_change_movement/" target="_blank" aria-label="Instagram" style="color: #FFD700;"><i class="fab fa-instagram"></i></a>
+<footer>
+    <p>&copy; 2024 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/positive_change_movement/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
     </div>
 </footer>
-
-<script>
-    // Mobile menu toggle
-    function toggleMenu() {
-        const navLinks = document.getElementById('nav-links');
-        navLinks.classList.toggle('active');
-    }
-</script>
 
 </body>
 </html>
