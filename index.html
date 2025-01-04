@@ -3,91 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empowering Lives, Building Communities | Positive Change Movement</title>
-    <link rel="stylesheet" href="style.css"> <!-- External CSS File -->
+    <meta name="description" content="Empowering Lives, Building Communities with advocacy, peer support, and education.">
+    <title>Home | Positive Change Movement</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the shared CSS file -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
     <style>
-        /* Inline Styles for Consistency */
+        /* General Reset */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            line-height: 1.6;
         }
 
+        /* Hero Section */
         .hero {
-            text-align: center;
-            background-color: #E30613; /* Red Background */
+            background-color: #E30613;
             color: white;
-            padding: 3rem 1rem;
+            text-align: center;
+            padding: 6rem 1rem;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         .hero .logo {
-            max-width: 300px; /* Adjusted for a larger logo */
+            max-width: 400px; /* Matches the size on About Us */
             margin-bottom: 20px;
         }
 
         .hero h1 {
             font-size: 3.5rem;
-            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
             margin-bottom: 1rem;
         }
 
         .hero p {
-            font-size: 1.5rem;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Shadow for subtitle */
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            margin-bottom: 2rem;
         }
 
-        .hero a.cta-button {
-            background-color: #FFD700; /* Gold Button */
-            color: #1f355e; /* Navy Text */
+        .hero .cta-button {
+            background-color: #FFD700;
+            color: #1f355e;
             padding: 1rem 2rem;
             text-decoration: none;
+            font-size: 1.2rem;
             border-radius: 5px;
-            font-size: 1.1rem;
-            margin-top: 20px;
-            display: inline-block;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s;
+            transition: background-color 0.3s;
         }
 
-        .hero a.cta-button:hover {
+        .hero .cta-button:hover {
             background-color: #1f355e;
             color: white;
         }
 
+        /* Navigation Bar */
         nav {
             background-color: #1f355e;
             padding: 1rem 0;
-            text-align: center;
         }
 
         nav ul {
+            display: flex;
+            justify-content: center;
             list-style: none;
             padding: 0;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
         }
 
         nav ul li {
-            display: inline;
+            margin: 0 15px;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.1rem;
         }
 
         nav ul li a.active {
-            color: #FFD700; /* Gold */
+            color: #FFD700;
             border-bottom: 2px solid #FFD700;
         }
 
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        /* Section Styling */
         section {
-            padding: 2rem 1rem;
             text-align: center;
+            padding: 4rem 1rem;
             max-width: 800px;
             margin: 0 auto;
         }
@@ -95,31 +102,46 @@
         section h2 {
             font-size: 2.5rem;
             color: #E30613;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         section p {
             font-size: 1.2rem;
             line-height: 1.8;
+            color: #333;
         }
 
+        /* Footer */
         footer {
-            background-color: #1f355e; /* Navy Footer */
+            background-color: #1f355e;
             color: white;
             text-align: center;
-            padding: 1.5rem;
+            padding: 1.5rem 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer .social-icons {
+            margin-top: 1rem;
         }
 
         footer .social-icons a {
             color: #FFD700;
             margin: 0 10px;
             font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons a:hover {
+            color: white;
         }
     </style>
 </head>
 <body>
 
-<!-- Header Section -->
+<!-- Hero Section -->
 <header class="hero">
     <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
     <h1>Empowering Lives, Building Communities</h1>
@@ -140,20 +162,24 @@
     </ul>
 </nav>
 
-<!-- Main Content -->
+<!-- Main Content Section -->
 <section>
     <h2>Our Core Values</h2>
     <p>At Positive Change Movement, our core values include advocacy, peer support, and education. Together, we aim to empower individuals and build inclusive communities.</p>
 </section>
 
-<!-- Footer Section -->
+<!-- Footer -->
 <footer>
     <p>&copy; 2024 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
     <div class="social-icons">
-        <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/positive_change_movement/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/positive_change_movement/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
     </div>
 </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
