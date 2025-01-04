@@ -438,3 +438,86 @@ html {
     font-weight: bold;
     font-size: 1rem;
 }
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center; /* Default alignment for text */
+}
+
+/* Header */
+header {
+    background-color: #E30613;
+    color: white;
+    padding: 3rem 0;
+}
+header .logo {
+    max-width: 200px; /* Increased size for the logo */
+    margin-bottom: 1.5rem;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+header .header-subtitle {
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #1f355e;
+    padding: 1rem 0;
+    margin: 0;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a.active {
+    color: #FFD700;
+}
+
+/* Centered Section */
+.centered-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.centered-section h2 {
+    color: #E30613;
+    margin-bottom: 1rem;
+}
+.centered-section p {
+    margin-bottom: 1.5rem;
+}
+.centered-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem auto;
+}
+.centered-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1f355e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
