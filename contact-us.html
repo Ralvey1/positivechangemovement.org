@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Get in touch with Positive Change Movement to learn about our advocacy, peer support, and community initiatives.">
-    <title>Contact Us - Positive Change Movement</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <title>Contact Us | Positive Change Movement</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
 
-<!-- Header Section with Logo -->
-<header>
+<!-- Header Section -->
+<header class="hero">
     <a href="index.html">
         <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
     </a>
@@ -53,9 +54,12 @@
     </form>
 </section>
 
-<!-- Footer Section with Social Icons -->
+<!-- Back-to-Top Button -->
+<div class="back-to-top" onclick="scrollToTop()">&#8679;</div>
+
+<!-- Footer Section -->
 <footer>
-    <p>&copy; 2024 Positive Change Movement | Peer Support, Advocacy, Education – Together, We Thrive</p>
+    <p>&copy; 2024 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
     <div class="social-icons">
         <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/positive_change_movement/" target="_blank" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
@@ -66,6 +70,10 @@
     function toggleMenu() {
         const navLinks = document.getElementById('nav-links');
         navLinks.classList.toggle('active');
+    }
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 </script>
 
