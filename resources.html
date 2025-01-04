@@ -3,28 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Comprehensive resources for people living with HIV, including housing, healthcare, and prevention services.">
-    <title>Resources | Positive Change Movement</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <title>Community Resources | Positive Change Movement</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        /* Hero section */
+        .hero {
+            text-align: center;
+            background-color: #E30613; /* Red background */
+            color: white;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero .logo {
+            max-width: 350px; /* Larger logo */
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Shadow for title */
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Shadow for subtitle */
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            background-color: #1f355e; /* Navy background */
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a.active {
+            color: #FFD700; /* Gold */
+            border-bottom: 2px solid #FFD700;
+        }
+
+        /* Resources section */
+        .resources-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .column {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .column h2 {
+            font-size: 1.8rem;
+            color: #E30613;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .column p, .column a {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .column a {
+            color: #1f355e;
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #1f355e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        footer .social-icons a {
+            color: #FFD700;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 <body>
 
-<!-- Header Section -->
-<header>
-    <a href="index.html">
-        <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
-    </a>
+<!-- Hero Section -->
+<header class="hero">
+    <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
     <h1>Community Resources</h1>
-    <p class="header-subtitle">Connecting you with essential healthcare, housing, and support services.</p>
+    <p>Connecting you with essential healthcare, housing, and support services.</p>
 </header>
 
-<!-- Navigation Menu -->
+<!-- Navigation -->
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
         <li><a href="peersupport.html">Peer Support</a></li>
         <li><a href="advocacy.html">Advocacy</a></li>
         <li><a href="resources.html" class="active">Resources</a></li>
@@ -33,86 +138,52 @@
     </ul>
 </nav>
 
-<!-- Main Content Section -->
-<section>
-    <h2 class="section-title">Healthcare Resources</h2>
-    <div class="resource-container">
-        <div class="resource">
-            <i class="fas fa-clinic-medical resource-icon"></i>
-            <h3>Derby City PrEP Clinic</h3>
-            <p>1101 E. Washington Street, Suite A, Louisville, KY</p>
-            <a href="https://derbycityprep.org/" target="_blank" rel="noopener">Visit Derby City PrEP</a><br>
+<!-- Resources Section -->
+<section class="resources-container">
+    <!-- Left Column -->
+    <div class="column">
+        <h2>Healthcare Resources</h2>
+        <p><strong>Derby City PrEP Clinic</strong><br>
+            1101 E. Washington Street, Suite A, Louisville, KY<br>
+            <a href="https://derbycityprep.org/" target="_blank">Visit Derby City PrEP</a><br>
             Phone: 502-546-6069
-        </div>
-
-        <div class="resource">
-            <i class="fas fa-hospital resource-icon"></i>
-            <h3>University of Louisville Physicians</h3>
-            <p>401 E Chestnut St, Suite 370, Louisville, KY 40202</p>
-            <a href="https://www.uoflphysicians.com/" target="_blank" rel="noopener">Visit U of L Physicians</a><br>
+        </p>
+        <p><strong>University of Louisville Physicians</strong><br>
+            401 E Chestnut St, Suite 370, Louisville, KY 40202<br>
+            <a href="https://www.uoflphysicians.com/" target="_blank">Visit U of L Physicians</a><br>
             Phone: 502-588-4500
-        </div>
+        </p>
+        <h2>Housing Services</h2>
+        <p><strong>House of Ruth</strong><br>
+            <a href="https://houseofruth.net/what-we-do/emergency-and-family-services/" target="_blank">Visit House of Ruth</a><br>
+            Phone: 502-587-5080
+        </p>
     </div>
-</section>
 
-<section>
-    <h2 class="section-title">Housing Services</h2>
-    <div class="resource-container">
-        <div class="resource">
-            <i class="fas fa-home resource-icon"></i>
-            <h3>House of Ruth</h3>
-            <p>502-587-5080</p>
-            <a href="https://houseofruth.net/what-we-do/emergency-and-family-services/" target="_blank" rel="noopener">Visit House of Ruth</a>
-        </div>
-
-        <div class="resource">
-            <i class="fas fa-building resource-icon"></i>
-            <h3>Louisville Metro Housing Authority</h3>
-            <p>502-569-3400</p>
-            <a href="http://www.lmha1.org/" target="_blank" rel="noopener">Visit Louisville Metro Housing Authority</a>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2 class="section-title">Prevention Services</h2>
-    <div class="resource-container">
-        <div class="resource">
-            <i class="fas fa-shield-virus resource-icon"></i>
-            <h3>Greater Than AIDS PrEP Locator (National)</h3>
-            <a href="https://www.greaterthan.org/get-prep/" target="_blank" rel="noopener">Find PrEP Providers Nationwide</a>
-        </div>
-
-        <div class="resource">
-            <i class="fas fa-notes-medical resource-icon"></i>
-            <h3>Planned Parenthood of Indiana and Kentucky</h3>
-            <p>842 S 7th St, Louisville, KY 40203</p>
-            <a href="https://www.plannedparenthood.org/" target="_blank" rel="noopener">Visit Planned Parenthood</a><br>
+    <!-- Right Column -->
+    <div class="column">
+        <h2>Prevention Services</h2>
+        <p><strong>Greater Than AIDS PrEP Locator (National)</strong><br>
+            <a href="https://www.greaterthan.org/get-prep/" target="_blank">Find PrEP Providers Nationwide</a>
+        </p>
+        <p><strong>Planned Parenthood of Indiana and Kentucky</strong><br>
+            842 S 7th St, Louisville, KY 40203<br>
+            <a href="https://www.plannedparenthood.org/" target="_blank">Visit Planned Parenthood</a><br>
             Phone: 502-584-2473
-        </div>
+        </p>
+        <h2>Homelessness Resources</h2>
+        <p><strong>Coalition for the Homeless</strong><br>
+            <a href="https://louhomeless.org/" target="_blank">Visit Coalition for the Homeless</a><br>
+            Phone: 502-637-2337
+        </p>
+        <p><strong>St. John Center for Homeless Men</strong><br>
+            <a href="https://www.stjohncenter.org/" target="_blank">Visit St. John Center</a><br>
+            Phone: 502-568-6758
+        </p>
     </div>
 </section>
 
-<section>
-    <h2 class="section-title">Homelessness Resources</h2>
-    <div class="resource-container">
-        <div class="resource">
-            <i class="fas fa-users resource-icon"></i>
-            <h3>Coalition for the Homeless</h3>
-            <p>502-637-2337</p>
-            <a href="https://louhomeless.org/" target="_blank" rel="noopener">Visit Coalition for the Homeless</a>
-        </div>
-
-        <div class="resource">
-            <i class="fas fa-hand-holding-heart resource-icon"></i>
-            <h3>St. John Center for Homeless Men</h3>
-            <p>502-568-6758</p>
-            <a href="https://www.stjohncenter.org/" target="_blank" rel="noopener">Visit St. John Center</a>
-        </div>
-    </div>
-</section>
-
-<!-- Footer Section -->
+<!-- Footer -->
 <footer>
     <p>&copy; 2024 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
     <div class="social-icons">
