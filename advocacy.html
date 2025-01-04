@@ -3,90 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn more about Positive Change Movement's advocacy efforts to promote equity, decriminalization, and rights for People Living with HIV (PLHIV).">
-    <title>Advocacy - Positive Change Movement</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS file -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
+    <meta name="description" content="Dedicated to advocating for People Living with HIV, those at risk, and marginalized communities.">
+    <title>Advocacy | Positive Change Movement</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            text-align: center;
+            background-color: #E30613;
+            color: white;
+            padding: 3rem 1rem;
+        }
+
+        .hero .logo {
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            background-color: #1f355e;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a.active {
+            color: #FFD700;
+            border-bottom: 2px solid #FFD700;
+        }
+
+        section {
+            padding: 2rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #E30613;
+            margin-bottom: 1rem;
+        }
+
+        .content-image {
+            max-width: 90%;
+            height: auto;
+            margin: 1rem auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .spacing-section {
+            padding: 1.5rem 1rem;
+        }
+
+        footer {
+            background-color: #1f355e;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        footer .social-icons a {
+            color: #FFD700;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="hero" style="background-color: #E30613; color: white; padding: 40px 20px; text-align: center;">
-        <a href="index.html">
-            <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo" style="max-width: 120px; margin-bottom: 20px;">
-        </a>
-        <h1>Advocacy</h1>
-        <p style="font-size: 1.2rem;">Dedicated to advocating for People Living with HIV, those at risk, and the marginalized communities most impacted by HIV.</p>
-    </header>
 
-    <!-- Navigation -->
-    <nav style="background-color: #1f355e; padding: 10px; display: flex; justify-content: center;">
-        <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
-            <li><a href="index.html" style="color: white; text-decoration: none; margin: 0 15px;">Home</a></li>
-            <li><a href="aboutus.html" style="color: white; text-decoration: none; margin: 0 15px;">About Us</a></li>
-            <li><a href="peersupport.html" style="color: white; text-decoration: none; margin: 0 15px;">Peer Support</a></li>
-            <li><a href="advocacy.html" style="color: #FFD700; text-decoration: none; margin: 0 15px; font-weight: bold;">Advocacy</a></li>
-            <li><a href="resources.html" style="color: white; text-decoration: none; margin: 0 15px;">Resources</a></li>
-            <li><a href="blog.html" style="color: white; text-decoration: none; margin: 0 15px;">Blog</a></li>
-            <li><a href="contact.html" style="color: white; text-decoration: none; margin: 0 15px;">Contact</a></li>
-        </ul>
-    </nav>
+<header class="hero">
+    <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
+    <h1>Advocacy</h1>
+    <p>Dedicated to advocating for People Living with HIV, those at risk, and the marginalized communities most impacted by HIV.</p>
+</header>
 
-    <!-- Advocacy Hero Section -->
-    <section class="advocacy-hero" style="padding: 40px; text-align: center; background-color: #f9f9f9;">
-        <h2 style="color: #1f355e;">Advocacy for Positive Change</h2>
-        <p style="max-width: 800px; margin: 20px auto; font-size: 1.2rem;">At Positive Change Movement, we are committed to advocating for the rights of People Living with HIV (PLHIV). We strive to dismantle harmful policies, end stigma, and promote health equity for all.</p>
-    </section>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="peersupport.html">Peer Support</a></li>
+        <li><a href="advocacy.html" class="active">Advocacy</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- Advocacy Goals Section -->
-    <section class="advocacy-goals" style="padding: 40px;">
-        <h2 style="color: #1f355e; text-align: center;">Our Advocacy Goals</h2>
-        <ul style="max-width: 800px; margin: 20px auto; padding: 0; list-style-type: none;">
-            <li style="margin-bottom: 20px;"><strong>Decriminalization:</strong> We advocate for the decriminalization of HIV to ensure that individuals are not prosecuted for their status and that outdated laws are reformed to reflect scientific advancements.</li>
-            <li style="margin-bottom: 20px;"><strong>Equitable Healthcare:</strong> We work toward a healthcare system that provides equitable access to treatment, prevention, and care for all individuals, regardless of income, race, or location.</li>
-            <li><strong>Ending Stigma:</strong> We aim to break down the stigma surrounding HIV through education, public outreach, and promoting understanding within and beyond our community.</li>
-        </ul>
-    </section>
+<section>
+    <h2 class="section-title">Advocacy for Positive Change</h2>
+    <p>At Positive Change Movement, we are committed to advocating for the rights of People Living with HIV (PLHIV). We strive to dismantle harmful policies, end stigma, and promote health equity for all.</p>
+</section>
 
-    <!-- Advocacy in Action Section -->
-    <section class="advocacy-actions" style="background-color: #f4f4f4; padding: 40px;">
-        <h2 style="color: #1f355e; text-align: center;">Advocacy in Action</h2>
-        <p style="max-width: 800px; margin: 20px auto; text-align: center;">Positive Change Movement engages in various advocacy initiatives, including:</p>
-        <ul style="max-width: 800px; margin: 20px auto; padding: 0; list-style-type: none;">
-            <li style="margin-bottom: 20px;"><strong>Policy Reform:</strong> Working with local and national lawmakers to modernize HIV criminalization laws.</li>
-            <li style="margin-bottom: 20px;"><strong>Community Outreach:</strong> Partnering with local organizations to raise awareness and provide resources for PLHIV.</li>
-            <li><strong>Educational Campaigns:</strong> Offering workshops and materials to educate the public on HIV-related issues and to combat misinformation.</li>
-        </ul>
-        <img src="images/communitystrength.jpg" alt="Advocacy in Action" style="max-width: 100%; border-radius: 10px; margin-top: 20px;">
-    </section>
+<section>
+    <h2 class="section-title">Our Advocacy Goals</h2>
+    <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
+        <li><strong>Decriminalization:</strong> Advocating for the reform of outdated HIV criminalization laws.</li>
+        <li><strong>Equitable Healthcare:</strong> Working towards an inclusive healthcare system.</li>
+        <li><strong>Ending Stigma:</strong> Promoting understanding through education and outreach.</li>
+    </ul>
+</section>
 
-    <!-- How You Can Get Involved Section -->
-    <section class="advocacy-involvement" style="padding: 40px;">
-        <h2 style="color: #1f355e; text-align: center;">How You Can Get Involved</h2>
-        <p style="max-width: 800px; margin: 20px auto; text-align: center;">Our advocacy efforts rely on community support. Here’s how you can make a difference:</p>
-        <ul style="max-width: 800px; margin: 20px auto; padding: 0; list-style-type: none;">
-            <li style="margin-bottom: 20px;"><strong>Contact Your Representatives:</strong> Reach out to your local representatives and urge them to support HIV decriminalization and equitable healthcare policies.</li>
-            <li style="margin-bottom: 20px;"><strong>Attend Advocacy Events:</strong> Join us at local and national events where we raise awareness, share stories, and advocate for change.</li>
-            <li><strong>Volunteer:</strong> Become an advocate by participating in outreach initiatives, helping to educate the public, or supporting those affected by HIV.</li>
-        </ul>
-        <p style="text-align: center;">If you’re ready to take action, <a href="contact.html" style="color: #E30613;">contact us</a> to learn more about upcoming advocacy events and volunteer opportunities.</p>
-    </section>
+<img src="images/community-action.jpg" alt="Community Advocacy" class="content-image">
 
-    <!-- Footer -->
-    <footer style="background-color: #1f355e; color: white; text-align: center; padding: 20px;">
-        <p>&copy; 2024 Positive Change Movement | Peer Support, Advocacy, Education – Together, We Thrive</p>
-        <div class="social-icons" style="margin-top: 10px;">
-            <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank" aria-label="Facebook" style="color: #FFD700; margin-right: 10px;"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/positive_change_movement/" target="_blank" aria-label="Instagram" style="color: #FFD700;"><i class="fab fa-instagram"></i></a>
-        </div>
-    </footer>
+<section class="spacing-section">
+    <h2 class="section-title">How You Can Get Involved</h2>
+    <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
+        <li><strong>Contact Your Representatives:</strong> Advocate for equitable healthcare policies.</li>
+        <li><strong>Attend Advocacy Events:</strong> Join us to raise awareness and share stories.</li>
+        <li><strong>Volunteer:</strong> Become an advocate to support those affected by HIV.</li>
+    </ul>
+    <p>If you're ready to take action, <a href="contact.html" style="color: #E30613; text-decoration: underline;">contact us</a> for more information on upcoming events and volunteer opportunities.</p>
+</section>
 
-    <script>
-        // Mobile menu toggle
-        function toggleMenu() {
-            const navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('active');
-        }
-    </script>
+<footer>
+    <p>&copy; 2024 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/positive_change_movement/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
 </body>
 </html>
