@@ -4,83 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Positive Change Movement</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- For icons -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            text-align: center;
+            background-color: #E30613; /* Red Background */
+            color: white;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero .logo {
+            max-width: 300px; /* Larger Logo */
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Shadow Effect */
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Shadow Effect */
+        }
+
+        nav {
+            background-color: #1f355e; /* Navy Background */
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a.active {
+            color: #FFD700; /* Gold Active Link */
+            border-bottom: 2px solid #FFD700;
+        }
+
+        .blog-content {
+            padding: 2rem 1rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .blog-content h2 {
+            font-size: 2.5rem;
+            color: #E30613;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .blog-post img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post {
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        footer {
+            background-color: #1f355e; /* Navy Footer */
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        footer .social-icons a {
+            color: #FFD700; /* Gold Social Links */
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <a href="index.html">
-            <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
-        </a>
-        <h1>Positive Change Movement</h1>
-        <p class="header-subtitle">Insights, Stories, and Updates</p>
-    </header>
+<!-- Header Section -->
+<header class="hero">
+    <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
+    <h1>Positive Change Movement</h1>
+    <p>Insights, Stories, and Updates</p>
+</header>
 
-    <!-- Navigation -->
-    <nav>
-        <ul id="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="peersupport.html">Peer Support</a></li>
-            <li><a href="advocacy.html">Advocacy</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="blog.html" class="active">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="peersupport.html">Peer Support</a></li>
+        <li><a href="advocacy.html">Advocacy</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- Blog Listing Section -->
-    <section class="blog-listing">
-        <h1>Our Blog</h1>
-        <p>Explore our latest articles, insights, and updates on topics related to HIV, advocacy, and community support.</p>
-        
-        <ul class="blog-posts">
-            <!-- Blog Post 1 -->
-            <li class="blog-post">
-                <img src="images/communitystrength.jpg" alt="Breaking the Silence" class="blog-thumbnail">
-                <div class="blog-details">
-                    <a href="breaking-the-silence.html" class="blog-title">Breaking the Silence: Confronting Stigma Around Identity and Health</a>
-                    <p class="blog-excerpt">Discover how communities can confront stigma surrounding HIV and health identity, paving the way for empowerment.</p>
-                </div>
-            </li>
+<!-- Blog Content -->
+<div class="blog-content">
+    <h2>Our Blog</h2>
+    <p>Explore our latest articles, insights, and updates on topics related to HIV, advocacy, and community support.</p>
 
-            <!-- Blog Post 2 -->
-            <li class="blog-post">
-                <img src="images/TakeCare.jpg" alt="Care and Advocacy" class="blog-thumbnail">
-                <div class="blog-details">
-                    <a href="care-and-advocacy.html" class="blog-title">Care and Advocacy: Building a Supportive Network</a>
-                    <p class="blog-excerpt">Learn how advocacy groups and communities are creating a strong support system for people living with HIV.</p>
-                </div>
-            </li>
-            
-            <!-- Add more blog posts as needed -->
-        </ul>
+    <!-- Blog Post 1 -->
+    <div class="blog-post">
+        <img src="images/communitystrength.jpg" alt="Community Strength">
+        <h3><a href="breaking-the-silence.html">Breaking the Silence: Confronting Stigma Around Identity and Health</a></h3>
+        <p>Discover how communities can confront stigma surrounding HIV and health identity, paving the way for empowerment.</p>
+    </div>
 
-        <!-- Pagination Placeholder -->
-        <div class="pagination">
-            <a href="#">&laquo; Previous</a>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">Next &raquo;</a>
-        </div>
-    </section>
+    <!-- Blog Post 2 -->
+    <div class="blog-post">
+        <img src="images/TakeCare.jpg" alt="Care and Advocacy">
+        <h3><a href="care-and-advocacy.html">Care and Advocacy: Building a Supportive Network</a></h3>
+        <p>Learn how advocacy groups and communities are creating a strong support system for people living with HIV.</p>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Positive Change Movement | Peer Support, Advocacy, Education – Together, We Thrive</p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/positive_change_movement/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        </div>
-    </footer>
+    <!-- Pagination -->
+    <div class="pagination">
+        <a href="#">&laquo; Previous</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Next &raquo;</a>
+    </div>
+</div>
 
-    <!-- Optional JavaScript -->
-    <script>
-        // Add any interactivity or scripts here (e.g., pagination functionality).
-    </script>
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/positive_change_movement/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
 </body>
 </html>
