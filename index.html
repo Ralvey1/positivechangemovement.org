@@ -48,49 +48,41 @@
             color: #B8860B; /* Gold Highlight */
         }
 
-        /* Hero Section */
-        .hero {
+        /* Combined Hero and Vision Section */
+        .hero-vision {
             background: url('images/power-of-plurality-1.jpg') no-repeat center center/cover;
             background-size: cover;
             color: white;
             text-align: center;
-            padding: 10rem 2rem; /* Increased padding for better spacing */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 10rem 2rem;
         }
 
-        .hero h1 {
+        .hero-vision h1 {
             font-size: 3.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
             text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
         }
 
-        /* Vision and Mission Section */
-        .vision-mission {
-            background: transparent; /* Allow hero background to continue */
-            color: white;
-            text-align: center;
-            padding: 5rem 2rem;
-        }
-
-        .vision-mission .inner {
-            background: rgba(255, 255, 255, 0.8);
+        .vision-container {
+            background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             display: inline-block;
+            max-width: 700px;
+            margin: 2rem auto;
         }
 
-        .vision-mission h2 {
+        .vision-container h2 {
             font-size: 2rem;
             margin-bottom: 1rem;
             color: #E30613; /* Red */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
-        .vision-mission p {
+        .vision-container p {
             font-size: 1.2rem;
             margin: 0 auto;
-            max-width: 700px;
             color: #333;
         }
 
@@ -171,14 +163,10 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <div class="hero">
+    <!-- Hero and Vision Section Combined -->
+    <section class="hero-vision">
         <h1>Positive Change Movement</h1>
-    </div>
-
-    <!-- Vision and Mission Section -->
-    <section class="vision-mission">
-        <div class="inner">
+        <div class="vision-container">
             <h2>Our Vision and Mission</h2>
             <p>
                 Positive Change Movement envisions a world where all people living with HIV/AIDS, especially those from marginalized communities, are empowered, supported, and have equal access to resources and care. Our mission is to challenge stigma, advocate for justice, provide education, and build a community-driven support system for those affected by HIV/AIDS.
@@ -219,6 +207,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
