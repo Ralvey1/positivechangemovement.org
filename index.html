@@ -84,6 +84,51 @@
             margin: 0 auto;
         }
 
+        /* Columns Section */
+        .columns-section {
+            background: #E30613; /* HIV Awareness Red */
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        .columns-section h2 {
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        .columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .column {
+            background: #fff;
+            color: black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 2rem;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .column img {
+            height: 60px;
+            margin-bottom: 1rem;
+        }
+
+        .column h3 {
+            margin-bottom: 1rem;
+            color: #E30613; /* HIV Awareness Red */
+        }
+
+        .column p {
+            font-size: 1rem;
+        }
+
         /* Footer */
         footer {
             background: #1f355e; /* Navy Blue */
@@ -134,6 +179,28 @@
         <p>Positive Change Movement envisions a world where all people living with HIV/AIDS, especially those from marginalized communities, are empowered, supported, and have equal access to resources and care. Our mission is to challenge stigma, advocate for justice, provide education, and build a community-driven support system for those affected by HIV/AIDS.</p>
     </section>
 
+    <!-- Columns Section -->
+    <section class="columns-section">
+        <h2>What We Offer</h2>
+        <div class="columns">
+            <div class="column">
+                <img src="images/icon-care.png" alt="Care">
+                <h3>Care</h3>
+                <p>Comprehensive medical and emotional care for people living with HIV/AIDS.</p>
+            </div>
+            <div class="column">
+                <img src="images/icon-support.png" alt="Support">
+                <h3>Support</h3>
+                <p>Peer support groups to foster resilience and empowerment.</p>
+            </div>
+            <div class="column">
+                <img src="images/icon-education.png" alt="Education">
+                <h3>Education</h3>
+                <p>Workshops and resources to educate communities about HIV/AIDS.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
@@ -145,5 +212,3 @@
     </footer>
 </body>
 </html>
-
-
