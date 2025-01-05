@@ -3,109 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Positive Change Movement</title>
+    <title>Welcome to Positive Change Movement</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
-        /* General Styles */
+        /* General styles */
         body {
-            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
 
         header {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-
-        header .hero {
-            position: relative;
-            background: url('images/hero-image.jpg') no-repeat center center/cover;
-            height: 80vh;
             display: flex;
-            justify-content: center;
             align-items: center;
-            flex-direction: column;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background-color: #E30613;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
-        header h1 {
-            font-size: 3rem;
+        header .logo {
+            max-width: 150px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            gap: 1.5rem;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 4rem 1rem;
+            background-color: #E30613;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
             margin-bottom: 1rem;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
         }
 
-        header p {
-            font-size: 1.5rem;
+        .hero-section p {
+            font-size: 1.2rem;
             margin-bottom: 2rem;
         }
 
-        header .cta-button {
+        .hero-section .cta-button {
             background-color: #FFD700;
             color: #1f355e;
             padding: 1rem 2rem;
             border: none;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
             border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        header .cta-button:hover {
-            background-color: #1f355e;
-            color: white;
-        }
-
-        /* Navigation */
-        nav {
-            background-color: #1f355e;
-            color: white;
-            padding: 1rem 0;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-        }
-
-        nav ul li a {
+            font-size: 1rem;
             text-decoration: none;
-            color: white;
             font-weight: bold;
+            transition: all 0.3s ease;
         }
 
-        nav ul li a.active, nav ul li a:hover {
-            color: #FFD700;
+        .hero-section .cta-button:hover {
+            background-color: #1f355e;
+            color: white;
         }
 
-        /* Footer */
         footer {
             background-color: #1f355e;
             color: white;
             text-align: center;
-            padding: 1.5rem 0;
-        }
-
-        footer .social-icons {
-            margin: 1rem 0;
+            padding: 1.5rem;
+            margin-top: auto;
         }
 
         footer .social-icons a {
-            margin: 0 10px;
             color: #FFD700;
+            margin: 0 10px;
             font-size: 1.5rem;
         }
     </style>
@@ -113,33 +110,33 @@
 <body>
     <!-- Header Section -->
     <header>
-        <div class="hero">
-            <h1>Welcome to Positive Change Movement</h1>
-            <p>Join us as we uplift and support People Living with HIV through advocacy, peer support, and community-driven initiatives.</p>
-            <a href="about.html" class="cta-button">Learn More</a>
-        </div>
+        <img src="images/logo.png" alt="Positive Change Movement Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="peersupport.html">Peer Support</a></li>
+                <li><a href="advocacy.html">Advocacy</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="peersupport.html">Peer Support</a></li>
-            <li><a href="advocacy.html">Advocacy</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Welcome to Positive Change Movement</h1>
+        <p>Join us as we uplift and support People Living with HIV through advocacy, peer support, and community-driven initiatives.</p>
+        <a href="aboutus.html" class="cta-button">Learn More</a>
+    </section>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
         <div class="social-icons">
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
 </body>
