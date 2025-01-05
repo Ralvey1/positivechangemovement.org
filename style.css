@@ -644,3 +644,55 @@ footer {
     line-height: 1.5;
     color: #333;
 }
+/* What CHANGE Means to Us Section */
+.what-change-means {
+    background: rgba(192, 192, 192, 0.8); /* Transparent silver background */
+    color: black;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.what-change-means h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* 3 Cards per Row Layout */
+.change-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 2rem;
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.change-card {
+    background: white;
+    color: black;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.change-card img {
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.change-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #E30613; /* Red */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.change-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
