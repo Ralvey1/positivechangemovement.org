@@ -100,16 +100,28 @@
 
         /* What We Offer Section */
         .what-we-offer {
-            background: #B8860B; /* Rich Gold */
-            color: #E30613;
+            background: url("images/communitystrength.jpg") no-repeat center center; /* New background image */
+            background-size: cover;
+            color: white;
             text-align: center;
             padding: 3rem 2rem;
+            position: relative;
         }
 
-        .what-we-offer h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: white;
+        .what-we-offer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text readability */
+            z-index: 1;
+        }
+
+        .what-we-offer h2, .offer-cards {
+            position: relative;
+            z-index: 2;
         }
 
         .offer-cards {
@@ -148,11 +160,32 @@
             padding: 2rem;
         }
 
-        footer .social-icons a {
-            color: white;
-            margin: 0 10px;
-            font-size: 1.5rem;
-            text-decoration: none;
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .social-icons .facebook {
+            background-image: url("images/facebook-gold.png"); /* Path to gold Facebook icon */
+        }
+
+        .social-icons .instagram {
+            background-image: url("images/instagram-gold.png"); /* Path to gold Instagram icon */
+        }
+
+        .social-icons .twitter {
+            background-image: url("images/twitter-gold.png"); /* Path to gold Twitter icon */
         }
     </style>
 </head>
@@ -217,13 +250,14 @@
     <footer>
         <p>&copy; 2024 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
         <div class="social-icons">
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://facebook.com" class="facebook" target="_blank" aria-label="Facebook"></a>
+            <a href="https://instagram.com" class="instagram" target="_blank" aria-label="Instagram"></a>
+            <a href="https://twitter.com" class="twitter" target="_blank" aria-label="Twitter"></a>
         </div>
     </footer>
 </body>
 </html>
+
 
 
 
