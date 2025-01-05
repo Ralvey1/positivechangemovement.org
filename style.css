@@ -581,3 +581,18 @@ footer {
     background-color: #1f355e;
     color: white;
 }
+/* Title Section */
+.title-section {
+    background: white;
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #E30613; /* HIV Awareness Red */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadowing */
+    margin: 0;
+}
