@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Positive Change Movement</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/PCM-logo.jpeg" type="image/jpeg">
     <style>
         /* General Styles */
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: black;
         }
 
         /* Header and Navigation */
         header {
             background: #1f355e; /* Navy Blue */
             padding: 1rem 2rem;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -39,94 +37,90 @@
 
         nav ul li a {
             text-decoration: none;
-            color: white; /* White Text for Header Links */
+            color: white;
             font-weight: bold;
+            font-size: 1rem;
         }
 
         nav ul li a:hover,
         nav ul li a.active {
-            color: #FFD700; /* Gold Highlight */
+            color: #f0f0f0; /* Slightly lighter white for hover and active state */
         }
 
-        /* Title Section */
-        .title-section {
+        /* Hero Section */
+        .hero {
             background: #E30613; /* HIV Awareness Red */
+            color: white; /* White Text */
             text-align: center;
-            padding: 2rem 0;
+            padding: 5rem 2rem;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .title-section h1 {
-            font-size: 3.5rem;
-            font-weight: bold;
-            color: #FFD700; /* Gold Text */
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadowing */
-            margin: 0;
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
         }
 
         /* Vision and Mission Section */
-        .mission-vision {
+        .vision-mission {
+            background: #E30613; /* HIV Awareness Red */
+            color: white; /* White Text */
             text-align: center;
             padding: 3rem 2rem;
-            background: #E30613; /* HIV Awareness Red */
-            color: white;
         }
 
-        .mission-vision h2 {
-            color: #FFD700; /* Gold */
-            font-size: 2.5rem;
+        .vision-mission h2 {
+            font-size: 2rem;
             margin-bottom: 1rem;
         }
 
-        .mission-vision p {
+        .vision-mission p {
             font-size: 1.2rem;
-            max-width: 800px;
             margin: 0 auto;
+            max-width: 700px;
         }
 
-        /* Columns Section */
-        .columns-section {
-            background: white; /* White Background */
-            color: black;
+        /* What We Offer Section */
+        .what-we-offer {
+            background: white;
+            color: #E30613; /* Red */
             text-align: center;
             padding: 3rem 2rem;
         }
 
-        .columns-section h2 {
+        .what-we-offer h2 {
+            font-size: 2rem;
             margin-bottom: 2rem;
-            font-size: 2.5rem;
-            color: #E30613; /* HIV Awareness Red */
+            color: #E30613; /* Red */
         }
 
-        .columns {
+        .offer-cards {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             gap: 2rem;
+            flex-wrap: wrap;
         }
 
-        .column {
+        .offer-card {
             background: #fff;
-            color: black;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
             border-radius: 8px;
             padding: 2rem;
-            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 250px;
             text-align: center;
         }
 
-        .column img {
+        .offer-card img {
             height: 60px;
             margin-bottom: 1rem;
         }
 
-        .column h3 {
+        .offer-card h3 {
+            font-size: 1.5rem;
+            color: #E30613; /* Red */
             margin-bottom: 1rem;
-            color: #E30613; /* HIV Awareness Red */
-        }
-
-        .column p {
-            font-size: 1rem;
         }
 
         /* Footer */
@@ -138,14 +132,10 @@
         }
 
         footer .social-icons a {
-            color: #FFD700; /* Gold */
+            color: white;
             margin: 0 10px;
             font-size: 1.5rem;
             text-decoration: none;
-        }
-
-        footer .social-icons a:hover {
-            color: #E30613; /* HIV Awareness Red */
         }
     </style>
 </head>
@@ -153,7 +143,7 @@
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo">
+            <img src="images/PCM-logo.jpeg" alt="Positive Change Movement">
         </div>
         <nav>
             <ul>
@@ -168,32 +158,34 @@
         </nav>
     </header>
 
-    <!-- Title Section -->
-    <div class="title-section">
+    <!-- Hero Section -->
+    <div class="hero">
         <h1>Positive Change Movement</h1>
     </div>
 
     <!-- Vision and Mission Section -->
-    <section class="mission-vision">
+    <section class="vision-mission">
         <h2>Our Vision and Mission</h2>
-        <p>Positive Change Movement envisions a world where all people living with HIV/AIDS, especially those from marginalized communities, are empowered, supported, and have equal access to resources and care. Our mission is to challenge stigma, advocate for justice, provide education, and build a community-driven support system for those affected by HIV/AIDS.</p>
+        <p>
+            Positive Change Movement envisions a world where all people living with HIV/AIDS, especially those from marginalized communities, are empowered, supported, and have equal access to resources and care. Our mission is to challenge stigma, advocate for justice, provide education, and build a community-driven support system for those affected by HIV/AIDS.
+        </p>
     </section>
 
-    <!-- Columns Section -->
-    <section class="columns-section">
+    <!-- What We Offer Section -->
+    <section class="what-we-offer">
         <h2>What We Offer</h2>
-        <div class="columns">
-            <div class="column">
+        <div class="offer-cards">
+            <div class="offer-card">
                 <img src="images/icon-care.png" alt="Care">
                 <h3>Care</h3>
-                <p>Comprehensive medical and emotional care for people living with HIV/AIDS.</p>
+                <p>Comprehensive medical and emotional care for PLHIV.</p>
             </div>
-            <div class="column">
+            <div class="offer-card">
                 <img src="images/icon-support.png" alt="Support">
                 <h3>Support</h3>
                 <p>Peer support groups to foster resilience and empowerment.</p>
             </div>
-            <div class="column">
+            <div class="offer-card">
                 <img src="images/icon-education.png" alt="Education">
                 <h3>Education</h3>
                 <p>Workshops and resources to educate communities about HIV/AIDS.</p>
@@ -212,5 +204,6 @@
     </footer>
 </body>
 </html>
+
 
 
