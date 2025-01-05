@@ -48,42 +48,54 @@
             color: #B8860B; /* Gold Highlight */
         }
 
-        /* Combined Hero and Vision Section */
+        /* Hero and Vision Section */
         .hero-vision {
-            background: url('images/power-of-plurality-1.jpg') no-repeat center center/cover;
-            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5rem 2rem;
+            background: #E30613; /* HIV Awareness Red */
             color: white;
-            text-align: center;
-            padding: 10rem 2rem;
+        }
+
+        .hero-vision-content {
+            max-width: 50%;
+            text-align: left;
         }
 
         .hero-vision h1 {
-            font-size: 3.5rem;
-            margin-bottom: 2rem;
-            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
 
         .vision-container {
-            background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            display: inline-block;
-            max-width: 700px;
-            margin: 2rem auto;
         }
 
         .vision-container h2 {
             font-size: 2rem;
             margin-bottom: 1rem;
             color: #E30613; /* Red */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
 
         .vision-container p {
             font-size: 1.2rem;
-            margin: 0 auto;
             color: #333;
+        }
+
+        .hero-vision-image {
+            max-width: 40%;
+        }
+
+        .hero-vision-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         /* What We Offer Section */
@@ -163,14 +175,19 @@
         </nav>
     </header>
 
-    <!-- Hero and Vision Section Combined -->
+    <!-- Hero and Vision Section -->
     <section class="hero-vision">
-        <h1>Positive Change Movement</h1>
-        <div class="vision-container">
-            <h2>Our Vision and Mission</h2>
-            <p>
-                Positive Change Movement envisions a world where all people living with HIV/AIDS, especially those from marginalized communities, are empowered, supported, and have equal access to resources and care. Our mission is to challenge stigma, advocate for justice, provide education, and build a community-driven support system for those affected by HIV/AIDS.
-            </p>
+        <div class="hero-vision-content">
+            <h1>Positive Change Movement</h1>
+            <div class="vision-container">
+                <h2>Our Vision and Mission</h2>
+                <p>
+                    Positive Change Movement envisions a world where all people living with HIV/AIDS, especially those from marginalized communities, are empowered, supported, and have equal access to resources and care. Our mission is to challenge stigma, advocate for justice, provide education, and build a community-driven support system for those affected by HIV/AIDS.
+                </p>
+            </div>
+        </div>
+        <div class="hero-vision-image">
+            <img src="images/power-of-plurality-1.jpg" alt="Positive Change Movement">
         </div>
     </section>
 
@@ -207,6 +224,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
