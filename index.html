@@ -3,32 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empowering Lives, Building Communities | Positive Change Movement</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Positive Change Movement | Empowering Lives, Building Communities</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <style>
-        /* Header and Logo Consistency */
-        .header {
+        /* Inline styles for specific changes */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
             text-align: center;
-            background-color: #E30613;
+            background-color: #E30613; /* Red background */
             color: white;
-            padding: 2rem 1rem; /* Reduced padding */
+            padding: 3rem 1rem;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .header .logo {
-            max-width: 200px; /* Smaller consistent logo size */
-            margin-bottom: 10px;
+        .hero .logo {
+            max-width: 200px; /* Adjust logo size */
+            margin-bottom: 1.5rem;
         }
 
-        .header h1 {
-            font-size: 2.5rem; /* Smaller header font size */
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-            margin-bottom: 0.5rem;
+        .hero h1 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Shadow for emphasis */
+            margin-bottom: 1rem;
         }
 
-        .header p {
+        .hero p {
             font-size: 1.2rem;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero .cta-button {
+            background-color: #FFD700;
+            color: #1f355e;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            display: inline-block;
+            margin-top: 2rem;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+        }
+
+        .hero .cta-button:hover {
+            background-color: #1f355e;
+            color: white;
         }
 
         nav {
@@ -39,8 +63,8 @@
 
         nav ul {
             list-style: none;
-            padding: 0;
             margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             gap: 1.5rem;
@@ -53,52 +77,88 @@
         }
 
         nav ul li a.active {
-            color: #FFD700;
+            color: #FFD700; /* Highlight active link */
             border-bottom: 2px solid #FFD700;
         }
 
-        section {
-            padding: 2rem 1rem;
+        .intro-section {
             text-align: center;
+            padding: 2rem 1rem;
             max-width: 800px;
             margin: 0 auto;
+        }
+
+        .intro-section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .intro-section h2 {
+            font-size: 2rem;
+            color: #E30613;
+            margin-bottom: 1rem;
+        }
+
+        .intro-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        footer {
+            background-color: #1f355e;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        footer .social-icons a {
+            color: #FFD700;
+            margin: 0 10px;
+            font-size: 1.5rem;
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header">
-        <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
-        <h1>Empowering Lives, Building Communities</h1>
-        <p>Join Positive Change Movement as we support and uplift People Living with HIV through advocacy, peer support, and community-driven initiatives.</p>
-    </header>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="peersupport.html">Peer Support</a></li>
-            <li><a href="advocacy.html">Advocacy</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<!-- Hero Section -->
+<header class="hero">
+    <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
+    <h1>Empowering Lives, Building Communities</h1>
+    <p>Join Positive Change Movement as we support and uplift People Living with HIV through advocacy, peer support, and community-driven initiatives.</p>
+    <a href="aboutus.html" class="cta-button">Learn More</a>
+</header>
 
-    <!-- Main Content -->
-    <section>
-        <h2>Our Core Values</h2>
-        <p>At Positive Change Movement, our core values include advocacy, peer support, and education. Together, we aim to empower individuals and build inclusive communities.</p>
-    </section>
+<!-- Navigation Menu -->
+<nav>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="peersupport.html">Peer Support</a></li>
+        <li><a href="advocacy.html">Advocacy</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- Footer -->
-    <footer style="background-color: #1f355e; color: white; text-align: center; padding: 1.5rem;">
-        <p>&copy; 2024 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank" style="color: #FFD700; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/positive_change_movement/" target="_blank" style="color: #FFD700; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
-        </div>
-    </footer>
+<!-- Intro Section -->
+<section class="intro-section">
+    <img src="images/community-photo.jpeg" alt="Community photo representing PCM's mission">
+    <h2>Welcome to Positive Change Movement</h2>
+    <p>We are dedicated to creating a safe, inclusive space for People Living with HIV (PLHIV) and those impacted by stigma. Through our advocacy, education, and support initiatives, we strive to empower individuals and foster thriving communities. Join us in championing health, equity, and growth for all.</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/positive_change_movement/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
 </body>
 </html>
