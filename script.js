@@ -18,3 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+document.getElementById("myButton").addEventListener("click", function () {
+    alert("Hello from External JavaScript!");
+});
