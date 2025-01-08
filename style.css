@@ -695,4 +695,47 @@ footer {
     line-height: 1.5;
     color: #333;
 }
+.content-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #f9f9f9;
+    color: #333;
+}
 
+.content-section h2 {
+    font-size: 2.5rem;
+    color: #1f355e;
+    margin-bottom: 2rem;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.resource-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.resource-card img {
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.resource-card h3 {
+    font-size: 1.5rem;
+    color: #E30613;
+    margin-bottom: 1rem;
+}
+
+.resource-card p {
+    font-size: 1rem;
+    color: #555;
+}
