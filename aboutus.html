@@ -3,153 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn more about our story, mission, vision, values, and the people behind our initiative.">
     <title>About Us | Positive Change Movement</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <link rel="icon" href="images/PCM-logo.jpeg" type="image/jpeg">
     <style>
-        /* Inline styles for quick customization */
-        .hero {
-            text-align: center;
-            background-color: #E30613; /* Red Background */
-            color: white;
-            padding: 3rem 1rem;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
         }
-        .hero .logo {
-            max-width: 300px; /* Larger logo */
-            margin-bottom: 20px;
+
+        /* Header and Navigation */
+        header {
+            background: #1f355e; /* Navy Blue */
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-        .hero h1 {
-            font-size: 3.5rem; /* Larger heading */
-            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); /* Stronger shadow */
-            margin-bottom: 1rem;
+
+        .logo img {
+            height: 60px;
         }
-        .hero p {
-            font-size: 1.5rem; /* Larger subtitle */
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); /* Shadow for subtitle */
-            margin-top: 0.5rem;
-        }
-        nav {
-            background-color: #1f355e; /* Navy Background */
-            padding: 1rem;
-        }
+
         nav ul {
             list-style: none;
             display: flex;
-            justify-content: center;
             gap: 2rem;
             margin: 0;
             padding: 0;
         }
+
         nav ul li a {
-            color: white;
             text-decoration: none;
+            color: white;
             font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s;
         }
+
+        nav ul li a:hover,
         nav ul li a.active {
-            color: #FFD700; /* Gold */
-            border-bottom: 2px solid #FFD700;
+            color: #B8860B; /* Gold Highlight */
         }
-        section {
-            padding: 2rem 1rem;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
+
+        /* Hero Section */
+        .hero-vision {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5rem 2rem;
+            background: #E30613; /* HIV Awareness Red */
+            color: white;
         }
-        section h2 {
-            font-size: 2.5rem;
-            color: #E30613;
+
+        .hero-vision-content {
+            max-width: 50%;
+            text-align: left;
+        }
+
+        .hero-vision h1 {
+            font-size: 3rem;
             margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
-        section p {
+
+        .vision-container {
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .vision-container h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #E30613; /* Red */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .vision-container p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .hero-vision-image {
+            max-width: 40%;
+        }
+
+        .hero-vision-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* About Content Section */
+        .about-section {
+            padding: 3rem 2rem;
+            background: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #1f355e;
+        }
+
+        .about-section p {
+            max-width: 800px;
+            margin: 0 auto 2rem;
             font-size: 1.2rem;
             line-height: 1.8;
         }
+
+        .about-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .about-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-card img {
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+
+        .about-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #E30613; /* Red */
+        }
+
+        .about-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Footer */
         footer {
-            background-color: #1f355e; /* Navy Background */
+            background: #1f355e;
             color: white;
             text-align: center;
-            padding: 1.5rem;
+            padding: 2rem;
         }
-        footer .social-icons a {
-            color: #FFD700; /* Gold */
-            margin: 0 10px;
-            font-size: 1.5rem;
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .social-icons .facebook {
+            background-image: url("images/facebook-gold.png");
+        }
+
+        .social-icons .instagram {
+            background-image: url("images/instagram-gold.png");
+        }
+
+        .social-icons .twitter {
+            background-image: url("images/twitter-gold.png");
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/PCM-logo.jpeg" alt="Positive Change Movement">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="peer-support.html">Peer Support</a></li>
+                <li><a href="advocacy.html">Advocacy</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Header Section -->
-<header class="hero">
-    <a href="index.html">
-        <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
-    </a>
-    <h1>About Us</h1>
-    <p>Learn more about our story, mission, vision, and the people behind our initiative.</p>
-</header>
+    <!-- Hero Section -->
+    <section class="hero-vision">
+        <div class="hero-vision-content">
+            <h1>About Us</h1>
+            <div class="vision-container">
+                <h2>Who We Are</h2>
+                <p>
+                    Positive Change Movement is dedicated to supporting individuals affected by HIV/AIDS by providing education, advocacy, and empowerment.
+                    We envision a future where everyone has equal access to healthcare, community, and resources to live fulfilling lives.
+                </p>
+            </div>
+        </div>
+        <div class="hero-vision-image">
+            <img src="images/about-hero.jpg" alt="About Us">
+        </div>
+    </section>
 
-<!-- Navigation Menu -->
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutus.html" class="active">About Us</a></li>
-        <li><a href="peersupport.html">Peer Support</a></li>
-        <li><a href="advocacy.html">Advocacy</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <!-- About Content Section -->
+    <section class="about-section">
+        <h2>What We Do</h2>
+        <p>
+            Our mission is to empower and uplift individuals, especially those from marginalized communities, by fostering education, advocacy, and support. 
+            Learn about our core values and initiatives below.
+        </p>
+        <div class="about-cards">
+            <div class="about-card">
+                <img src="images/icon-advocacy.png" alt="Advocacy">
+                <h3>Advocacy</h3>
+                <p>We advocate for equitable healthcare policies, human rights, and a stigma-free society.</p>
+            </div>
+            <div class="about-card">
+                <img src="images/icon-education.png" alt="Education">
+                <h3>Education</h3>
+                <p>Providing tools and knowledge to empower individuals and communities about HIV/AIDS.</p>
+            </div>
+            <div class="about-card">
+                <img src="images/icon-support.png" alt="Support">
+                <h3>Support</h3>
+                <p>Creating safe spaces for peer-led support and resource sharing.</p>
+            </div>
+        </div>
+    </section>
 
-<!-- Main Content -->
-<section>
-    <h2>Who We Are</h2>
-    <p>Positive Change Movement is a community-led initiative dedicated to empowering People Living with HIV (PLHIV) through advocacy, peer support, education, and reform. Our mission is to challenge stigma, end discrimination, and provide a platform for individuals and communities to thrive.</p>
-</section>
-
-<section>
-    <h2>Our Story</h2>
-    <p>Founded in 2024, Positive Change Movement began with a simple idea: to create a safe, supportive space for People Living with HIV (PLHIV) to connect, share their stories, and advocate for their rights. Over time, we have grown into a statewide initiative, offering services that include peer support groups, advocacy training, and holistic health resources for individuals and communities impacted by HIV.</p>
-</section>
-
-<section>
-    <h2>Our Mission</h2>
-    <p>To dismantle racism, homophobia, transphobia, and help end the HIV epidemic by promoting equity, understanding, and inclusiveness. Positive Change Movement aims to create a more just society by addressing systemic discrimination and fostering positive change.</p>
-</section>
-
-<section>
-    <h2>Our Vision</h2>
-    <p>We envision a world where individuals from all backgrounds thrive without facing discrimination. We aim to foster CHANGE—Championing Health, Advocacy, and Nurturing Growth and Empowerment—while dismantling oppressive systems.</p>
-    <ul style="text-align: left; display: inline-block; margin-top: 1rem;">
-        <li>Race is not a barrier to health and wellness.</li>
-        <li>Substance use is not stigmatized.</li>
-        <li>HIV status does not determine quality of life.</li>
-        <li>HIV transmission is eliminated.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Our Values</h2>
-    <p><strong>Equity:</strong> We ensure everyone, regardless of their background, has access to the support and resources they need.</p>
-    <p><strong>Empowerment:</strong> We believe in the power of lived experiences and the strength that comes from lifting up our voices to create change.</p>
-    <p><strong>Community:</strong> Together, we form a support network that fosters acceptance, understanding, and growth.</p>
-</section>
-
-<section>
-    <h2>Our Team</h2>
-    <p>The Positive Change Movement team is made up of passionate individuals, many of whom are People Living with HIV. Each team member brings a unique set of skills and experiences to our organization, united by our commitment to improving the lives of PLHIV through support, advocacy, and education.</p>
-</section>
-
-<!-- Footer Section -->
-<footer>
-    <p>&copy; 2024 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/positive_change_movement/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-    </div>
-</footer>
-
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" class="facebook" target="_blank" aria-label="Facebook"></a>
+            <a href="https://instagram.com" class="instagram" target="_blank" aria-label="Instagram"></a>
+            <a href="https://twitter.com" class="twitter" target="_blank" aria-label="Twitter"></a>
+        </div>
+    </footer>
 </body>
 </html>
+
