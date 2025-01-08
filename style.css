@@ -739,3 +739,18 @@ footer {
     font-size: 1rem;
     color: #555;
 }
+@media (max-width: 768px) {
+    .hero-vision {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-vision-image {
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+
+    .change-cards {
+        grid-template-columns: 1fr;
+    }
+}
