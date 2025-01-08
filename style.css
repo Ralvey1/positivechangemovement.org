@@ -928,3 +928,19 @@ footer {
     font-size: 1rem;
     color: #555;
 }
+@media (max-width: 768px) {
+    .hero-vision {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-vision-content, .hero-vision-image {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero-vision-image img {
+        max-width: 90%;
+        margin-top: 1rem;
+    }
+}
