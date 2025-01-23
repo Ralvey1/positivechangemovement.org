@@ -1,3 +1,184 @@
+  <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header and Navigation */
+        header {
+            background: #1f355e; /* Navy Blue */
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #B8860B; /* Gold Highlight */
+        }
+
+        /* Hero Section */
+        .hero-vision {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5rem 2rem;
+            background: #E30613; /* HIV Awareness Red */
+            color: white;
+        }
+
+        .hero-vision-content {
+            max-width: 50%;
+            text-align: left;
+        }
+
+        .hero-vision h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .vision-container {
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .vision-container h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #E30613; /* Red */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .vision-container p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .hero-vision-image {
+            max-width: 40%;
+        }
+
+        .hero-vision-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* About Content Section */
+        .about-section {
+            padding: 3rem 2rem;
+            background: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #1f355e;
+        }
+
+        .about-section p {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .about-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .about-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-card img {
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+
+        .about-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #E30613; /* Red */
+        }
+
+        .about-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background: #1f355e;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .social-icons .facebook {
+            background-image: url("images/facebook-gold.png");
+        }
+
+        .social-icons .instagram {
+            background-image: url("images/instagram-gold.png");
+        }
+
+        .social-icons .twitter {
+            background-image: url("images/twitter-gold.png");
+        }
+    </style>
+
 /* Body and General */
 body {
     font-family: Arial, sans-serif;
