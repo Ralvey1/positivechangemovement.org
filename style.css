@@ -28,17 +28,22 @@ nav ul {
     padding: 0;
 }
 
+/* Navigation Menu */
 nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 1rem;
-    transition: color 0.3s;
+    transition: background 0.3s, color 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }
 
+/* Menu Highlighting (No Gold) */
 nav ul li a:hover,
 nav ul li a.active {
-    color: #FFD700; /* Gold */
+    background: rgba(255, 255, 255, 0.2); /* Light Transparent White */
+    color: white;
 }
 
 /* Hero Section */
@@ -60,18 +65,12 @@ nav ul li a.active {
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: left;
-    color: #333; /* Dark text for readability */
-}
-
-.hero-vision h1 {
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    text-align: center;
+    color: #333;
 }
 
 /* Hero Image */
 .hero-vision-image {
-    max-width: 80%;
+    max-width: 50%;
     margin-top: 2rem;
 }
 
@@ -83,7 +82,7 @@ nav ul li a.active {
 
 /* What CHANGE Means to Us Section */
 .what-change-means {
-    background: #E30613; /* Red */
+    background: #1f355e; /* Navy Blue */
     color: white;
     text-align: center;
     padding: 3rem 2rem;
@@ -95,14 +94,15 @@ nav ul li a.active {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-/* Change Cards */
 .change-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 2rem;
-    margin-top: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Change Cards */
 .change-card {
     background: white;
     color: black;
@@ -112,57 +112,19 @@ nav ul li a.active {
     text-align: center;
 }
 
+/* Fix image display */
 .change-card img {
     height: 60px;
-    margin-bottom: 1rem;
-}
-
-.change-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #E30613;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.change-card p {
-    font-size: 1rem;
-    color: #333;
+    display: block;
+    margin: 0 auto 1rem;
 }
 
 /* Footer */
 footer {
-    background: #1f355e;
+    background: #E30613; /* Red */
     color: white;
     text-align: center;
     padding: 2rem;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 1rem;
-}
-
-.social-icons a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.social-icons .facebook {
-    background-image: url("images/facebook-gold.png");
-}
-
-.social-icons .instagram {
-    background-image: url("images/instagram-gold.png");
-}
-
-.social-icons .twitter {
-    background-image: url("images/twitter-gold.png");
 }
 
 /* Fade-in Animation */
@@ -178,6 +140,12 @@ footer {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .change-cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
 @media (max-width: 768px) {
     .hero-vision {
         flex-direction: column;
@@ -190,7 +158,19 @@ footer {
     }
 
     .hero-vision-image {
-        max-width: 100%;
+        max-width: 80%;
+    }
+
+    /* Stack cards into 2 columns for tablets */
+    .change-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    /* Stack into 1 column on small screens */
+    .change-cards {
+        grid-template-columns: 1fr;
     }
 }
 
