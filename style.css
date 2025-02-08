@@ -1,19 +1,15 @@
-#General Styles 
-
+/* Global Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #ffffff;
-    color: #333;
-    text-align: center;
+    background-color: #1f355e; /* Navy Blue */
+    color: white;
 }
 
- #Header Styles
-
-#Fix Header Alignment
+/* Header & Navigation */
 header {
-    background: #1f355e;
+    background: #E30613; /* Red */
     padding: 1.5rem 2rem;
     display: flex;
     align-items: center;
@@ -42,11 +38,10 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #B8860B;
+    color: #FFD700; /* Gold */
 }
 
-#Hero Section
-
+/* Hero Section */
 .hero-vision {
     display: flex;
     align-items: center;
@@ -54,7 +49,7 @@ nav ul li a.active {
     flex-direction: column;
     text-align: center;
     padding: 5rem 2rem;
-    background: #E30613;
+    background: #1f355e; /* Navy Blue */
     color: white;
 }
 
@@ -65,6 +60,7 @@ nav ul li a.active {
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: left;
+    color: #333; /* Dark text for readability */
 }
 
 .hero-vision h1 {
@@ -72,25 +68,8 @@ nav ul li a.active {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     text-align: center;
 }
-.vision-container {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
-.vision-container h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #E30613;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.vision-container p {
-    font-size: 1.2rem;
-    color: #333;
-}
-
+/* Hero Image */
 .hero-vision-image {
     max-width: 80%;
     margin-top: 2rem;
@@ -102,10 +81,9 @@ nav ul li a.active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#What CHANGE Means to Us Section
-
+/* What CHANGE Means to Us Section */
 .what-change-means {
-    background: #E30613;
+    background: #E30613; /* Red */
     color: white;
     text-align: center;
     padding: 3rem 2rem;
@@ -117,7 +95,7 @@ nav ul li a.active {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-/* Grid Layout for Cards */
+/* Change Cards */
 .change-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -151,7 +129,7 @@ nav ul li a.active {
     color: #333;
 }
 
-#Footer Styles
+/* Footer */
 footer {
     background: #1f355e;
     color: white;
@@ -187,9 +165,19 @@ footer {
     background-image: url("images/twitter-gold.png");
 }
 
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
 
-#Responsive Design
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .hero-vision {
         flex-direction: column;
@@ -206,14 +194,3 @@ footer {
     }
 }
 
-#Fade-in animation 
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
