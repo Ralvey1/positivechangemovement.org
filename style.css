@@ -11,9 +11,10 @@ body {
 
  #Header Styles
 
+#Fix Header Alignment
 header {
     background: #1f355e;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,7 +27,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     margin: 0;
     padding: 0;
 }
@@ -41,32 +42,36 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #B8860B; /* Gold Highlight */
+    color: #B8860B;
 }
-
 
 #Hero Section
 
 .hero-vision {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     padding: 5rem 2rem;
-    background: #E30613; /* HIV Awareness Red */
+    background: #E30613;
     color: white;
-    text-align: left;
 }
 
 .hero-vision-content {
-    max-width: 50%;
+    max-width: 80%;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
 .hero-vision h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: center;
 }
-
 .vision-container {
     background: rgba(255, 255, 255, 0.9);
     padding: 2rem;
@@ -87,7 +92,8 @@ nav ul li a.active {
 }
 
 .hero-vision-image {
-    max-width: 40%;
+    max-width: 80%;
+    margin-top: 2rem;
 }
 
 .hero-vision-image img {
@@ -95,7 +101,6 @@ nav ul li a.active {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 
 #What CHANGE Means to Us Section
 
@@ -191,20 +196,16 @@ footer {
         text-align: center;
     }
 
-    .hero-vision-content,
+    .hero-vision-content {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
     .hero-vision-image {
         max-width: 100%;
     }
-
-    .hero-vision-image img {
-        max-width: 90%;
-        margin-top: 1rem;
-    }
-
-    .change-cards {
-        grid-template-columns: 1fr;
-    }
 }
+
 #Fade-in animation 
 .fade-in {
     opacity: 0;
