@@ -1,952 +1,53 @@
-  <style>
-        /* General Styles */
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-        }
+ 
+#General Styles 
 
-        /* Header and Navigation */
-        header {
-            background: #1f355e; /* Navy Blue */
-            padding: 1rem 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo img {
-            height: 60px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            font-size: 1rem;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover,
-        nav ul li a.active {
-            color: #B8860B; /* Gold Highlight */
-        }
-
-        /* Hero Section */
-        .hero-vision {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 5rem 2rem;
-            background: #E30613; /* HIV Awareness Red */
-            color: white;
-        }
-
-        .hero-vision-content {
-            max-width: 50%;
-            text-align: left;
-        }
-
-        .hero-vision h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        }
-
-        .vision-container {
-            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .vision-container h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #E30613; /* Red */
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        }
-
-        .vision-container p {
-            font-size: 1.2rem;
-            color: #333;
-        }
-
-        .hero-vision-image {
-            max-width: 40%;
-        }
-
-        .hero-vision-image img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* About Content Section */
-        .about-section {
-            padding: 3rem 2rem;
-            background: #f9f9f9;
-            color: #333;
-            text-align: center;
-        }
-
-        .about-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: #1f355e;
-        }
-
-        .about-section p {
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            font-size: 1.2rem;
-            line-height: 1.8;
-        }
-
-        .about-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-            text-align: center;
-        }
-
-        .about-card {
-            background: white;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .about-card img {
-            height: 80px;
-            margin-bottom: 1rem;
-        }
-
-        .about-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #E30613; /* Red */
-        }
-
-        .about-card p {
-            font-size: 1rem;
-            color: #555;
-        }
-
-        /* Footer */
-        footer {
-            background: #1f355e;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 1rem;
-        }
-
-        .social-icons a {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .social-icons .facebook {
-            background-image: url("images/facebook-gold.png");
-        }
-
-        .social-icons .instagram {
-            background-image: url("images/instagram-gold.png");
-        }
-
-        .social-icons .twitter {
-            background-image: url("images/twitter-gold.png");
-        }
-    </style>
-
-/* Body and General */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #ffffff;
     color: #333;
+    text-align: center;
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    background-color: #E30613; /* HIV Awareness Red */
-    color: white;
-    padding: 3rem 1rem;
-}
-.hero .logo {
-    max-width: 150px;
-    margin-bottom: 20px;
-}
-.hero h1 {
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.hero p {
-    margin: 20px 0;
-    font-size: 1.2rem;
-}
-.hero .cta-button {
-    background-color: #FFD700; /* Gold */
-    color: #1f355e; /* Navy */
-    text-decoration: none;
+ #Header Styles
+
+header {
+    background: #1f355e;
     padding: 1rem 2rem;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    display: inline-block;
-    transition: background-color 0.3s;
-}
-.hero .cta-button:hover {
-    background-color: #1f355e;
-    color: white;
-}
-
-/* Core Values Section */
-.core-values {
-    padding: 2rem 1rem;
-    text-align: center;
-}
-.pillars {
     display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-}
-.pillar {
-    flex: 1 1 300px;
-    background: white;
-    border: 2px solid #E30613; /* Red Border */
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-.pillar img {
-    max-width: 100px;
-    margin-bottom: 1rem;
-}
-.pillar h3 {
-    color: #E30613; /* Red */
-    font-size: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* Initiatives Section */
-.initiatives {
-    padding: 2rem 1rem;
-    text-align: center;
+.logo img {
+    height: 60px;
 }
-.programs {
+
+nav ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-}
-.program {
-    flex: 1 1 300px;
-    text-align: center;
-    background: white;
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-.program img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
-/* Footer */
-footer {
-    background-color: #1f355e;
+nav ul li a {
+    text-decoration: none;
     color: white;
-    text-align: center;
-    padding: 1rem;
-}
-footer .social-icons a {
-    color: #FFD700; /* Gold */
-    margin: 0 10px;
-    font-size: 1.5rem;
+    font-weight: bold;
+    font-size: 1rem;
     transition: color 0.3s;
 }
-footer .social-icons a:hover {
-    color: white;
-}
 
-
-/* Navigation Styling */
-nav {
-    background-color: #1f355e; /* Navy blue */
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-nav ul li a:hover {
-    color: #FFD700; /* Gold color for hover effect */
-}
-
+nav ul li a:hover,
 nav ul li a.active {
-    color: #FFD700;
-    border-bottom: 2px solid #FFD700;
+    color: #B8860B; /* Gold Highlight */
 }
 
-/* Mobile Navigation Toggle */
-.menu-icon {
-    display: none;
-    font-size: 1.5rem;
-    color: white;
-    cursor: pointer;
-    z-index: 10;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: #1f355e;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        padding: 20px 0;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-}
-
-/* Smooth Scroll */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 4rem;
-    background-color: #E30613; /* HIV Awareness Red */
-    color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    max-width: 800px;
-    margin: 0 auto 2rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.cta-button {
-    padding: 1rem 2rem;
-    background-color: #FFD700; /* Gold */
-    color: #1f355e; /* Navy */
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.cta-button:hover {
-    background-color: #1f355e; /* Navy */
-    color: #FFD700; /* Gold */
-}
-
-/* Core Values Section */
-.core-values {
-    background-color: #FFFFFF;
-    padding: 4rem 2rem;
-    text-align: center;
-    color: #1f355e; /* Navy */
-}
-
-.core-values .section-title {
-    font-size: 2.5rem;
-    color: #1f355e; /* Navy */
-    margin-bottom: 2rem;
-    border-bottom: 2px solid #FFD700; /* Gold */
-    display: inline-block;
-    padding-bottom: 0.5rem;
-}
-
-.pillars {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.pillar {
-    background-color: #F9F9F9;
-    border: 1px solid #E30613; /* HIV Awareness Red */
-    padding: 1.5rem;
-    border-radius: 10px;
-    flex: 1;
-    max-width: 300px;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.pillar h3 {
-    color: #E30613; /* HIV Awareness Red */
-    margin-bottom: 1rem;
-}
-
-.pillar p {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.6;
-}
-/* Initiatives Section */
-.featured-programs {
-    background-color: #FFFFFF;
-    padding: 4rem 2rem;
-    text-align: center;
-    color: #1f355e; /* Navy */
-}
-
-.featured-programs .section-title {
-    font-size: 2.5rem;
-    color: #1f355e; /* Navy */
-    margin-bottom: 2rem;
-    border-bottom: 2px solid #FFD700; /* Gold */
-    display: inline-block;
-    padding-bottom: 0.5rem;
-}
-
-.programs {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.program {
-    background-color: #F9F9F9;
-    border: 1px solid #E30613; /* HIV Awareness Red */
-    padding: 1.5rem;
-    border-radius: 10px;
-    max-width: 300px;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.program img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    border: 2px solid #FFD700; /* Gold */
-}
-
-.program h3 {
-    color: #E30613; /* HIV Awareness Red */
-    margin-bottom: 1rem;
-}
-
-.program p {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-.program .cta-button {
-    padding: 0.5rem 1rem;
-    background-color: #FFD700; /* Gold */
-    color: #1f355e; /* Navy */
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.program .cta-button:hover {
-    background-color: #E30613; /* HIV Awareness Red */
-    color: #FFFFFF; /* White */
-}
-
-/* Blog Image Styling */
-.blog-image {
-    width: 100%;
-    max-width: 800px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-}
-
-/* Highlighted Quotes */
-.highlighted-quote {
-    font-style: italic;
-    color: #555;
-    border-left: 4px solid #E30613;
-    padding-left: 20px;
-    margin: 20px 0;
-}
-
-/* Related Posts Section */
-.related-posts h2 {
-    font-size: 1.8rem;
-    color: #1f355e;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.related-posts ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-.related-posts ul li {
-    margin: 10px 0;
-}
-
-.related-posts ul li a {
-    color: #E30613;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.related-posts ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Contact Form Section */
-.contact-form-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background-color: #E30613;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #FFD700;
-    color: #333;
-}
-
-.contact-form label {
-    text-align: left;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-    font-weight: bold;
-    font-size: 1rem;
-}
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    text-align: center; /* Default alignment for text */
-}
-
-/* Header */
-header {
-    background-color: #E30613;
-    color: white;
-    padding: 3rem 0;
-}
-header .logo {
-    max-width: 200px; /* Increased size for the logo */
-    margin-bottom: 1.5rem;
-}
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-header .header-subtitle {
-    font-size: 1.2rem;
-}
-
-/* Navigation */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    background-color: #1f355e;
-    padding: 1rem 0;
-    margin: 0;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-nav ul li a.active {
-    color: #FFD700;
-}
-
-/* Centered Section */
-.centered-section {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-.centered-section h2 {
-    color: #E30613;
-    margin-bottom: 1rem;
-}
-.centered-section p {
-    margin-bottom: 1.5rem;
-}
-.centered-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem auto;
-}
-.centered-section ul li {
-    margin-bottom: 0.5rem;
-}
-
-/* Footer */
-footer {
-    background-color: #1f355e;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 3rem;
-}
-/* Intro Section */
-.intro {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem;
-    background-color: #f8f9fa; /* Light Gray Background */
-}
-
-.intro-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.intro-image {
-    max-width: 350px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.intro-text {
-    max-width: 600px;
-    text-align: left;
-}
-
-.intro-text h2 {
-    color: #E30613; /* Red */
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-}
-
-.intro-text p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-.intro-text .cta-button {
-    background-color: #FFD700; /* Gold Button */
-    color: #1f355e; /* Navy Text */
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    display: inline-block;
-    transition: all 0.3s;
-}
-
-.intro-text .cta-button:hover {
-    background-color: #1f355e;
-    color: white;
-}
-/* Title Section */
-.title-section {
-    background: white;
-    text-align: center;
-    padding: 2rem 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.title-section h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: #E30613; /* HIV Awareness Red */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadowing */
-    margin: 0;
-}
-/* What CHANGE Means to Us Section */
-.what-change-means {
-    background: #E30613; /* HIV Awareness Red */
-    color: white;
-    text-align: center;
-    padding: 3rem 2rem;
-}
-
-.what-change-means h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.change-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.change-card {
-    background: white;
-    color: black;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    position: relative;
-}
-
-.change-card img {
-    height: 60px;
-    margin-bottom: 1rem;
-}
-
-.change-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #E30613; /* Red */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.change-card p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333;
-}
-/* What CHANGE Means to Us Section */
-.what-change-means {
-    background: rgba(192, 192, 192, 0.8); /* Transparent silver background */
-    color: black;
-    text-align: center;
-    padding: 3rem 2rem;
-}
-
-.what-change-means h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-/* 3 Cards per Row Layout */
-.change-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 2rem;
-    justify-items: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-}
-
-.change-card {
-    background: white;
-    color: black;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    text-align: center;
-    position: relative;
-}
-
-.change-card img {
-    height: 60px;
-    margin-bottom: 1rem;
-}
-
-.change-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #E30613; /* Red */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.change-card p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333;
-}
-.content-section {
-    text-align: center;
-    padding: 3rem 2rem;
-    background: #f9f9f9;
-    color: #333;
-}
-
-.content-section h2 {
-    font-size: 2.5rem;
-    color: #1f355e;
-    margin-bottom: 2rem;
-}
-
-.resources-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.resource-card {
-    background: white;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.resource-card img {
-    height: 60px;
-    margin-bottom: 1rem;
-}
-
-.resource-card h3 {
-    font-size: 1.5rem;
-    color: #E30613;
-    margin-bottom: 1rem;
-}
 
-.resource-card p {
-    font-size: 1rem;
-    color: #555;
-}
-@media (max-width: 768px) {
-    .hero-vision {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-vision-image {
-        max-width: 100%;
-        margin-top: 2rem;
-    }
+#Hero Section
 
-    .change-cards {
-        grid-template-columns: 1fr;
-    }
-}
-@media (max-width: 768px) {
-    .hero-vision {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-vision-image {
-        max-width: 100%;
-        margin-top: 2rem;
-    }
-}
-/* Hero Section */
 .hero-vision {
     display: flex;
     align-items: center;
@@ -954,15 +55,21 @@ footer {
     padding: 5rem 2rem;
     background: #E30613; /* HIV Awareness Red */
     color: white;
+    text-align: left;
 }
 
 .hero-vision-content {
     max-width: 50%;
-    text-align: left;
+}
+
+.hero-vision h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .vision-container {
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    background: rgba(255, 255, 255, 0.9);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -970,8 +77,8 @@ footer {
 
 .vision-container h2 {
     font-size: 2rem;
-    color: #E30613; /* Red */
     margin-bottom: 1rem;
+    color: #E30613;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -990,46 +97,57 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Content Section */
-.content-section {
-    padding: 3rem 2rem;
-    background: #f9f9f9;
-    color: #333;
+
+#What CHANGE Means to Us Section
+
+.what-change-means {
+    background: #E30613;
+    color: white;
     text-align: center;
+    padding: 3rem 2rem;
 }
 
-.content-section h2 {
+.what-change-means h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #1f355e;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-.initiatives-list {
+/* Grid Layout for Cards */
+.change-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin: 2rem auto;
-    max-width: 1200px;
+    margin-top: 2rem;
 }
 
-.initiative {
+.change-card {
     background: white;
+    color: black;
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: left;
+    text-align: center;
 }
 
-.initiative h3 {
-    color: #E30613;
+.change-card img {
+    height: 60px;
     margin-bottom: 1rem;
 }
 
-.initiative p {
-    color: #555;
+.change-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #E30613;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer */
+.change-card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+#Footer Styles
 footer {
     background: #1f355e;
     color: white;
@@ -1064,64 +182,27 @@ footer {
 .social-icons .twitter {
     background-image: url("images/twitter-gold.png");
 }
-/* Content Section */
-.content-section {
-    padding: 3rem 2rem;
-    background: #f9f9f9;
-    color: #333;
-    text-align: center;
-}
 
-.content-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #1f355e;
-}
 
-.resources-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem auto;
-    max-width: 1200px;
-}
+#Responsive Design
 
-.resource-card {
-    background: white;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.resource-card img {
-    height: 60px;
-    margin-bottom: 1rem;
-}
-
-.resource-card h3 {
-    font-size: 1.5rem;
-    color: #E30613;
-    margin-bottom: 1rem;
-}
-
-.resource-card p {
-    font-size: 1rem;
-    color: #555;
-}
 @media (max-width: 768px) {
     .hero-vision {
         flex-direction: column;
         text-align: center;
     }
 
-    .hero-vision-content, .hero-vision-image {
+    .hero-vision-content,
+    .hero-vision-image {
         max-width: 100%;
-        margin: 0 auto;
     }
 
     .hero-vision-image img {
         max-width: 90%;
         margin-top: 1rem;
+    }
+
+    .change-cards {
+        grid-template-columns: 1fr;
     }
 }
