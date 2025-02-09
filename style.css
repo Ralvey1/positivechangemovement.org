@@ -48,8 +48,8 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: var(--gold);
-    border-bottom: 2px solid var(--gold);
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
     padding-bottom: 5px;
 }
 
@@ -58,15 +58,22 @@ nav ul li a.active {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5rem 2rem;
-    background: var(--navy-blue);
+    flex-direction: column;
     text-align: center;
+    padding: 5rem 2rem;
+    background: var(--hiv-red);
 }
 
 .hero-vision h1 {
     font-size: 3rem;
     color: var(--white);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-vision p {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-top: 10px;
 }
 
 /* Content Section */
@@ -89,6 +96,7 @@ nav ul li a.active {
 
 .content-section p {
     font-size: 1.2rem;
+    color: var(--white);
     line-height: 1.8;
 }
 
@@ -149,5 +157,3 @@ footer {
         padding: 3rem 1rem;
     }
 }
-
-
