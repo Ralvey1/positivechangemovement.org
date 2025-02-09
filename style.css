@@ -157,3 +157,30 @@ footer {
         padding: 3rem 1rem;
     }
 }
+/* Advocacy Section Grid */
+.advocacy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+.advocacy-card {
+    background: var(--white);
+    color: var(--navy-blue);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.advocacy-card h3 {
+    color: var(--hiv-red);
+    font-size: 1.5rem;
+}
+
+.advocacy-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
