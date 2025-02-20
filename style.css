@@ -18,12 +18,18 @@ body {
 
 /* Header */
 header {
-    background: var(--hiv-red);
+    background: #1f355e; /* Navy Blue */
+    height: 80px; /
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+    position: fixed; /
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 
 .logo img {
     height: 80px;
@@ -99,7 +105,14 @@ nav ul li a.active {
     color: var(--white);
     line-height: 1.8;
 }
-
+    
+#change-means {
+    background: var(--silver); 
+    color: var(--navy-blue);
+    padding: 3rem 2rem;
+    border-radius: 10px;
+}
+    
 /* Buttons */
 .cta-button {
     background-color: var(--gold);
