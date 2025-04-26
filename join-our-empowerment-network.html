@@ -3,80 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Our Empowerment Network - Positive Change Movement</title>
+    <title>Join Our Empowerment Network | Positive Change Movement</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-<!-- Header Section -->
-<header class="hero">
-    <a href="index.html">
-        <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
-    </a>
-    <h1>Join Our Empowerment Network</h1>
-    <p class="header-subtitle">Be a part of a supportive, stigma-free environment where everyone thrives.</p>
-</header>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/PCM-logo.png" alt="Positive Change Movement Logo">
+        </div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="peersupport.html">Peer Support</a></li>
+                <li><a href="advocacy.html">Advocacy</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="join-our-empowerment-network.html" class="active">Join Us</a></li>
+            </ul>
+            <div id="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-<!-- Navigation -->
-<nav>
-    <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="peersupport.html">Peer Support</a></li>
-        <li><a href="advocacy.html">Advocacy</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <!-- Hero Section -->
+    <section class="hero-vision">
+        <div class="hero-vision-content">
+            <h1>Join Our Empowerment Network</h1>
+            <p>Be part of a movement led by people living with HIV and allies driving real change.</p>
+        </div>
+    </section>
 
-<!-- Main Section -->
-<section class="join-network">
-    <h1>Join Our Empowerment Network</h1>
-    <p>Become part of our community and contribute to creating spaces where everyone feels empowered, respected, and valued.</p>
+    <!-- Join Form Section -->
+    <section class="content-section">
+        <div class="vision-container">
+            <h2>Sign Up to Get Involved</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                </div>
+                <div>
+                    <label for="interests">I'm Interested In:</label><br>
+                    <select id="interests" name="interests" required>
+                        <option value="">--Select an Option--</option>
+                        <option value="volunteering">Volunteering</option>
+                        <option value="advocacy">Advocacy and Policy Work</option>
+                        <option value="peer-support">Becoming a Peer Navigator</option>
+                        <option value="donations">Supporting Through Donations</option>
+                    </select><br><br>
+                </div>
+                <div>
+                    <label for="message">Message (Optional):</label><br>
+                    <textarea id="message" name="message" rows="5"></textarea><br><br>
+                </div>
+                <button type="submit" class="cta-button">Join the Movement</button>
+            </form>
+        </div>
+    </section>
 
-    <h2>What You'll Gain</h2>
-    <ul>
-        <li><strong>Community Support:</strong> Connect with like-minded individuals passionate about positive change.</li>
-        <li><strong>Resources and Education:</strong> Access workshops and programs to help you thrive.</li>
-        <li><strong>Advocacy Opportunities:</strong> Play a role in promoting equity and reducing stigma.</li>
-        <li><strong>Peer Empowerment Groups:</strong> Join groups focused on mental wellness and personal growth.</li>
-    </ul>
-
-    <h2>Get Involved</h2>
-    <p>Ready to make a difference? Fill out the form below to join our Empowerment Network.</p>
-
-    <form action="submit_form.html" method="POST" class="contact-form">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Full Name" aria-label="Enter your full name" required>
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Enter your email address" required>
-
-        <label for="interests">Areas of Interest:</label>
-        <select id="interests" name="interests" aria-label="Select your area of interest">
-            <option value="peer-support">Peer Support</option>
-            <option value="advocacy">Advocacy</option>
-            <option value="education">Education</option>
-            <option value="community-events">Community Events</option>
-        </select>
-
-        <label for="message">Tell Us About Yourself (Optional):</label>
-        <textarea id="message" name="message" rows="4" placeholder="Share your background or interests (optional)" aria-label="Tell us about yourself"></textarea>
-
-        <button type="submit" class="cta-button" aria-label="Join the Empowerment Network">Join Now</button>
-    </form>
-</section>
-
-<!-- Footer Section -->
-<footer>
-    <p>&copy; 2024 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/positive_change_movement/" target="_blank" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
-    </div>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
 
 </body>
 </html>
