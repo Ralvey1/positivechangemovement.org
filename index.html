@@ -7,13 +7,40 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="script.js" defer></script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .about-card {
+            background: var(--white);
+            color: var(--navy-blue);
+            padding: 2rem;
+            margin: 2rem auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+        }
+        .section-heading {
+            text-align: center;
+            margin-top: 100px;
+            font-size: 2.2rem;
+            color: var(--gold);
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 <body>
 
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo">
+            <img src="images/PCM-logo.png" alt="Positive Change Movement Logo">
         </div>
         <nav>
             <ul id="nav-links">
@@ -34,7 +61,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-vision">
+    <section class="hero-vision fade-in">
         <div class="hero-vision-content">
             <h1>We Rise. We Lead. We Change.</h1>
             <p>Shifting power to people living with HIV and dismantling systemic barriers.</p>
@@ -42,38 +69,38 @@
     </section>
 
     <!-- About PCM Section -->
-    <section class="content-section">
-        <div class="vision-container">
+    <section class="content-section fade-in">
+        <div class="about-card">
             <h2>About Positive Change Movement</h2>
             <p>Positive Change Movement exists to dismantle systemic racism, serophobia, and performative activism embedded in HIV service organizations. We shift power back to the people living with HIV, demanding accountability and ensuring real action over empty promises.</p>
         </div>
     </section>
 
     <!-- What CHANGE Means Section -->
-    <section class="content-section">
-        <h2>What CHANGE Means to Us</h2>
+    <section class="content-section fade-in">
+        <h2 class="section-heading">What CHANGE Means to Us</h2>
         <div class="advocacy-grid">
-            <div class="advocacy-card">
+            <div class="advocacy-card fade-in">
                 <h3>Championing Health</h3>
                 <p>Bridging gaps in care through peer support, navigation, and community health worker programs.</p>
             </div>
-            <div class="advocacy-card">
+            <div class="advocacy-card fade-in">
                 <h3>Health Equity</h3>
                 <p>Ensuring access to equitable care and addressing systemic health disparities.</p>
             </div>
-            <div class="advocacy-card">
+            <div class="advocacy-card fade-in">
                 <h3>Advocacy</h3>
                 <p>Fighting for HIV decriminalization, anti-oppressive policies, and human rights protections.</p>
             </div>
-            <div class="advocacy-card">
+            <div class="advocacy-card fade-in">
                 <h3>Nurturing Growth</h3>
                 <p>Providing education, leadership opportunities, and empowerment for PLWHA and marginalized communities.</p>
             </div>
-            <div class="advocacy-card">
+            <div class="advocacy-card fade-in">
                 <h3>Generating Support</h3>
                 <p>Creating peer-led spaces for support, understanding, and resource access.</p>
             </div>
-            <div class="advocacy-card">
+            <div class="advocacy-card fade-in">
                 <h3>Ending Stigma</h3>
                 <p>Promoting education and awareness campaigns like U=U (Undetectable = Untransmittable).</p>
             </div>
@@ -92,10 +119,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
