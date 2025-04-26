@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (menuButton && navLinks) {
         menuButton.addEventListener("click", function () {
-            navLinks.classList.toggle("active");
+            navLinks.classList.toggle("show");
         });
     }
 
@@ -18,45 +18,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (!name || !email) {
                 alert("Please fill out both your name and email.");
-                event.preventDefault(); // Stop form submission if fields are empty
+                event.preventDefault(); // Prevent form submit
             } else {
-                alert("Thank you for joining the Empowerment Network!");
+                alert("Thank you for reaching out to Positive Change Movement!");
             }
         });
     }
 
-    // Button click alert
-    const myButton = document.getElementById("myButton");
-    if (myButton) {
-        myButton.addEventListener("click", function () {
-            alert("Hello from External JavaScript!");
-        });
-    }
-
-    // Highlight active navigation link
+    // Highlight active nav link
     document.querySelectorAll("nav ul li a").forEach(link => {
         if (link.href === window.location.href) {
             link.classList.add("active");
         }
     });
 
-    // Smooth scrolling for internal links
+    // Smooth scroll to anchor
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (event) {
-            event.preventDefault();
-            const targetId = this.getAttribute("href").substring(1);
-            const targetElement = document.getElementById(targetId);
-
-            if (targetElement) {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.getElementById(this.getAttribute("href").substring(1));
+            if (target) {
                 window.scrollTo({
-                    top: targetElement.offsetTop - 80, // Adjust for fixed header
+                    top: target.offsetTop - 80,
                     behavior: "smooth"
                 });
             }
         });
     });
 
-    // Fade-in effect on scroll
+    // Fade-in elements on scroll
     const fadeElements = document.querySelectorAll(".fade-in");
 
     function handleScroll() {
@@ -69,5 +59,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Run on load to check elements in viewport
+    handleScroll();
 });
