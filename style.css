@@ -8,34 +8,44 @@
 }
 
 /* General Styles */
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     background: var(--navy-blue);
     color: var(--white);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Header */
 header {
-    background: #1f355e; /* Navy Blue */
-    height: 80px; /
+    background: var(--navy-blue);
+    height: 80px;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed; /
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 
 .logo img {
     height: 80px;
 }
 
-/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
@@ -54,123 +64,74 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: var(--white);
-    border-bottom: 2px solid var(--white);
+    color: var(--gold);
+    border-bottom: 2px solid var(--gold);
     padding-bottom: 5px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: var(--white);
+    margin-bottom: 4px;
+    border-radius: 5px;
 }
 
 /* Hero Section */
 .hero-vision {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 5rem 2rem;
     background: var(--hiv-red);
+    color: var(--white);
+    text-align: center;
+    padding: 100px 20px 50px;
 }
 
-.hero-vision h1 {
+.hero-vision-content h1 {
     font-size: 3rem;
-    color: var(--white);
+    margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-.hero-vision p {
+.hero-vision-content p {
     font-size: 1.5rem;
-    color: var(--white);
     margin-top: 10px;
 }
 
-/* Content Section */
+/* Main Content Section */
 .content-section {
-    padding: 4rem 2rem;
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-    border: 2px solid var(--silver);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(192, 192, 192, 0.3);
+    padding: 60px 20px;
+    background-color: var(--navy-blue);
 }
 
-.content-section h2 {
+.vision-container {
+    margin-top: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vision-container h2 {
     color: var(--gold);
-    font-size: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
 
-.content-section p {
-    font-size: 1.2rem;
+.vision-container p, .vision-container ul {
+    margin-bottom: 20px;
     color: var(--white);
-    line-height: 1.8;
-}
-    
-#change-means {
-    background: var(--silver); 
-    color: var(--navy-blue);
-    padding: 3rem 2rem;
-    border-radius: 10px;
-}
-    
-/* Buttons */
-.cta-button {
-    background-color: var(--gold);
-    color: var(--navy-blue);
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    display: inline-block;
-    transition: all 0.3s;
 }
 
-.cta-button:hover {
-    background-color: var(--silver);
-    color: var(--navy-blue);
+.vision-container ul {
+    padding-left: 20px;
 }
 
-/* Footer */
-footer {
-    background: var(--hiv-red);
-    color: var(--gold);
-    text-align: center;
-    padding: 2rem;
-}
-
-/* Social Icons - Font Awesome */
-.social-icons {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.social-icons a {
-    color: var(--gold);
-    margin: 0 10px;
-    font-size: 2rem;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: var(--silver);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-vision {
-        padding: 3rem 1rem;
-    }
-
-    .content-section {
-        padding: 3rem 1rem;
-    }
-}
-/* Advocacy Section Grid */
+/* Cards (Advocacy, Blog, Resources) */
 .advocacy-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -196,4 +157,84 @@ footer {
 .advocacy-card p {
     font-size: 1rem;
     line-height: 1.6;
+}
+
+/* Form Styles */
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.cta-button {
+    background: var(--gold);
+    color: var(--navy-blue);
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.cta-button:hover {
+    background: var(--silver);
+}
+
+/* Footer */
+footer {
+    background: var(--hiv-red);
+    color: var(--gold);
+    text-align: center;
+    padding: 2rem;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: var(--gold);
+    margin: 0 10px;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--silver);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        background: var(--navy-blue);
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        display: none;
+        padding: 20px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero-vision {
+        padding: 80px 20px 40px;
+    }
+
+    .content-section {
+        padding: 40px 20px;
+    }
 }
