@@ -60,18 +60,52 @@
                 </div>
             </div>
         </div>
+        </section>
+
+    <!-- Substack Posts Embed -->
+    <section class="content-section">
+      <div class="vision-container">
+        <h2>From Our Substack</h2>
+        <div id="substack-feed" class="advocacy-grid">
+          Loading posts…
+        </div>
+      </div>
     </section>
-<!-- Substack Sign-up Embed -->
-<div id="substack-embed">
-  <script>
-    window.SubstackFeedWidget = {
-      substackUrl: "truthfromthemargins.substack.com",
-      layout: "centered",
-      showTitle: true
-    };
-  </script>
-  <script src="https://substackapi.com/embeds/feed.js" async></script>
-</div>
+
+<script>
+  async function loadSubstackPosts() {
+    const feedUrl = 'https://truthfromthemargins.substack.com/feed';
+    const api    = 'https://api.rss2json.com/v1/api.json?rss_url=';
+    const resp   = await fetch(api + encodeURIComponent(feedUrl));
+    const { items = [] } = await resp.json();
+
+    const container = document.querySelector('#substack-feed');
+    if (!items.length) {
+      container.innerHTML = '<p>No posts found.</p>';
+      return;
+    }
+
+    container.innerHTML = items.slice(0,5).map(post => {
+      const date = new Date(post.pubDate).toLocaleDateString();
+      return `
+        <article class="post-card">
+          <h3><a href="${post.link}" target="_blank" rel="noopener">
+            ${post.title}
+          </a></h3>
+          <time datetime="${post.pubDate}">${date}</time>
+          <p>${post.description.slice(0,150)}&hellip;</p>
+        </article>
+      `;
+    }).join('');
+  }
+
+  loadSubstackPosts().catch(err => {
+    console.error('Failed to load Substack posts:', err);
+    document.querySelector('#substack-feed')
+            .innerHTML = '<p>Error loading posts.</p>';
+  });
+</script>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
