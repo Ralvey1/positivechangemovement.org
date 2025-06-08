@@ -18,3 +18,17 @@ This site includes:
 - Join Our Empowerment Network form for volunteers and advocates
 
 ##  Project Structure
+- index.html - Main landing page for visitors
+- aboutus.html - Overview of PCM's background and values
+- advocacy.html - Details our policy and advocacy initiatives
+- blog.html - Posts and updates from our community
+- breaking-the-silence.html - Campaign page fighting HIV stigma
+- contact.html - General contact information
+- contact-us.html - Contact form for community outreach
+- join-our-empowerment-network.html - Volunteer signup form
+- mission.html - Expanded explanation of our mission
+- peersupport.html - Peer navigation and support programs
+- resources.html - Helpful links and information for PLHIV
+- style.css - Global site styling
+- script.js - Responsive navigation and other interactions
+- images/ - Contains all website images and graphics
