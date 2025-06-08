@@ -32,3 +32,7 @@ This site includes:
 - style.css - Global site styling
 - script.js - Responsive navigation and other interactions
 - images/ - Contains all website images and graphics
+
+### Link Validation
+
+Run `node check-links.js` to scan HTML files for relative links and ensure that each target file exists. This script runs automatically in GitHub Actions on every push.
