@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with Positive Change Movement to learn about our advocacy, peer support, and community initiatives.">
-    <title>Contact Us | Positive Change Movement</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Positive Change Movement to learn about our advocacy, peer support, and community initiatives.">
+  <title>Contact Us | Positive Change Movement</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
 <!-- Header Section -->
 <header class="hero">
-    <a href="index.html">
-        <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
-    </a>
-    <h1>Contact Us</h1>
-    <p class="header-subtitle">We’d love to hear from you! Please fill out the form below.</p>
+  <a href="index.html">
+    <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" class="logo">
+  </a>
+  <h1>Contact Us</h1>
+  <p class="header-subtitle">We’d love to hear from you! Please fill out the form below.</p>
 </header>
 
 <!-- Navigation Menu -->
 <nav>
-    <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="peersupport.html">Peer Support</a></li>
-        <li><a href="advocacy.html">Advocacy</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="standards.html">Standards</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
+  <ul id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="peersupport.html">Peer Support</a></li>
+    <li><a href="advocacy.html">Advocacy</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="standards.html">Standards</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
 </nav>
 
 <!-- Contact Form Section -->
 <section class="contact-form-section">
-    <h2>Get in Touch</h2>
-    <p>Feel free to reach out to us with any questions, suggestions, or to get involved!</p>
-    <form action="contact_process.php" method="POST" class="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" aria-label="Enter your name" required>
+  <h2>Get in Touch</h2>
+  <p>Feel free to reach out to us with any questions, suggestions, or to get involved!</p>
+  <form action="contact_process.php" method="POST" class="contact-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Enter your email address" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" placeholder="Subject" aria-label="Enter the subject" required>
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" placeholder="Subject" required>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" placeholder="Your Message" aria-label="Enter your message" required></textarea>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
 
-        <button type="submit" aria-label="Send your message">Send Message</button>
-    </form>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+  </form>
 </section>
 
 <!-- Back-to-Top Button -->
@@ -60,23 +60,34 @@
 
 <!-- Footer Section -->
 <footer>
-    <p>&copy; 2024 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/positive_change_movement/" target="_blank" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
-    </div>
+  <p>&copy; 2025 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/positive_change_movement/" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/company/positive-change-movement/" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
 </footer>
 
 <script>
-    function toggleMenu() {
-        const navLinks = document.getElementById('nav-links');
-        navLinks.classList.toggle('active');
-    }
+  function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+  }
 
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 </script>
+
+</body>
+</html>
+
 
 </body>
 </html>
