@@ -15,10 +15,12 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  padding-top: 80px;  font-family: 'Arial', sans-serif;
   background: var(--navy-blue);
   color: var(--white);
   line-height: 1.6;
+   
+}
 }
 
 img {
@@ -279,4 +281,11 @@ details[open] summary {
     margin-left: 10px;
     margin-right: 10px;
   }
+}
+a:focus {
+  outline: 2px dashed var(--gold);
+  outline-offset: 4px;
+}
+html {
+  scroll-behavior: smooth;
 }
