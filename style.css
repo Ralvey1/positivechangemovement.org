@@ -362,3 +362,36 @@ footer {
     width: 100%;
   }
 }
+/* PCM Standards - Collapsible Section Styles */
+.standard-section {
+  background: var(--white);
+  color: var(--navy-blue);
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  max-width: 900px;
+  transition: all 0.3s ease;
+}
+
+.standard-section summary {
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--hiv-red);
+  margin-bottom: 0.5rem;
+}
+
+.standard-section[open] summary {
+  color: var(--gold);
+}
+
+.standard-section ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.standard-section li {
+  margin-bottom: 0.5rem;
+}
