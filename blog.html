@@ -1,121 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Positive Change Movement</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Positive Change Movement</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo">
-        </div>
-        <nav>
-            <ul id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="peersupport.html">Peer Support</a></li>
-                <li><a href="advocacy.html">Advocacy</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="standards.html">Standards</a></li>
-                <li><a href="blog.html" class="active">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div id="menu-toggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/PCM-logo.jpeg" alt="Positive Change Movement Logo" />
+    </div>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="peersupport.html">Peer Support</a></li>
+        <li><a href="advocacy.html">Advocacy</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="standards.html">Standards</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div id="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero-vision">
-        <div class="hero-vision-content">
-            <h1>Our Blog</h1>
-            <p>Insights, Stories, and Updates from Positive Change Movement</p>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero-vision">
+    <div class="hero-vision-content">
+      <h1>Our Blog</h1>
+      <p>Insights, Stories, and Updates from Positive Change Movement</p>
+    </div>
+  </section>
 
-    <!-- Blog Content -->
-    <section class="content-section">
-        <div class="vision-container">
-            <h2>Latest Articles</h2>
-            <div class="advocacy-grid">
-                <div class="advocacy-card">
-                    <h3><a href="breaking-the-silence.html">Breaking the Silence</a></h3>
-                    <p>Confronting stigma surrounding identity and health, paving the way for empowerment.</p>
-                </div>
-                <div class="advocacy-card">
-                    <h3><a href="care-and-advocacy.html">Care and Advocacy</a></h3>
-                    <p>Building a strong, supportive network for individuals living with HIV through advocacy and compassion.</p>
-                </div>
-                <div class="advocacy-card">
-                    <h3><a href="#">Upcoming Events and Actions</a></h3>
-                    <p>Stay updated on community initiatives, advocacy days, and leadership opportunities.</p>
-                </div>
-            </div>
+  <!-- Blog Content -->
+  <section class="content-section">
+    <div class="vision-container">
+      <h2>Latest Articles</h2>
+      <div class="advocacy-grid">
+        <div class="advocacy-card">
+          <h3><a href="breaking-the-silence.html">Breaking the Silence</a></h3>
+          <p>Confronting stigma surrounding identity and health, paving the way for empowerment.</p>
         </div>
-        </section>
-
-    <!-- Substack Posts Embed -->
-    <section class="content-section">
-      <div class="vision-container">
-        <h2>From Our Substack</h2>
-        <div id="substack-feed" class="advocacy-grid">
-          Loading posts…
+        <div class="advocacy-card">
+          <h3><a href="care-and-advocacy.html">Care and Advocacy</a></h3>
+          <p>Building a strong, supportive network for individuals living with HIV through advocacy and compassion.</p>
+        </div>
+        <div class="advocacy-card">
+          <h3><a href="#">Upcoming Events and Actions</a></h3>
+          <p>Stay updated on community initiatives, advocacy days, and leadership opportunities.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-<script>
-  async function loadSubstackPosts() {
-    const feedUrl = 'https://truthfromthemargins.substack.com/feed';
-    const api    = 'https://api.rss2json.com/v1/api.json?rss_url=';
-    const resp   = await fetch(api + encodeURIComponent(feedUrl));
-    const { items = [] } = await resp.json();
+  <!-- Substack Posts Embed -->
+  <section class="content-section">
+    <div class="vision-container">
+      <h2>From Our Substack</h2>
+      <div id="substack-feed" class="advocacy-grid">
+        Loading posts…
+      </div>
+    </div>
+  </section>
 
-    const container = document.querySelector('#substack-feed');
-    if (!items.length) {
-      container.innerHTML = '<p>No posts found.</p>';
-      return;
+  <script>
+    async function loadSubstackPosts() {
+      const feedUrl = 'https://truthfromthemargins.substack.com/feed';
+      const api = 'https://api.rss2json.com/v1/api.json?rss_url=';
+      const resp = await fetch(api + encodeURIComponent(feedUrl));
+      const { items = [] } = await resp.json();
+
+      const container = document.querySelector('#substack-feed');
+      if (!items.length) {
+        container.innerHTML = '<p>No posts found.</p>';
+        return;
+      }
+
+      container.innerHTML = items.slice(0, 5).map(post => {
+        const date = new Date(post.pubDate).toLocaleDateString();
+        return `
+          <article class="post-card">
+            <h3><a href="${post.link}" target="_blank" rel="noopener">
+              ${post.title}
+            </a></h3>
+            <time datetime="${post.pubDate}">${date}</time>
+            <p>${post.description.slice(0, 150)}&hellip;</p>
+          </article>
+        `;
+      }).join('');
     }
 
-    container.innerHTML = items.slice(0,5).map(post => {
-      const date = new Date(post.pubDate).toLocaleDateString();
-      return `
-        <article class="post-card">
-          <h3><a href="${post.link}" target="_blank" rel="noopener">
-            ${post.title}
-          </a></h3>
-          <time datetime="${post.pubDate}">${date}</time>
-          <p>${post.description.slice(0,150)}&hellip;</p>
-        </article>
-      `;
-    }).join('');
-  }
+    loadSubstackPosts().catch(err => {
+      console.error('Failed to load Substack posts:', err);
+      document.querySelector('#substack-feed').innerHTML = '<p>Error loading posts.</p>';
+    });
+  </script>
 
-  loadSubstackPosts().catch(err => {
-    console.error('Failed to load Substack posts:', err);
-    document.querySelector('#substack-feed')
-            .innerHTML = '<p>Error loading posts.</p>';
-  });
-</script>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
-        <div class="social-icons">
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Positive Change Movement | Championing Health, Advocacy, Nurturing Growth, and Empowerment</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/positivechangemovement.pcm/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/positive_change_movement/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/positive-change-movement/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
 
 </body>
 </html>
