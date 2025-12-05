@@ -15,7 +15,8 @@
 }
 
 body {
-  padding-top: 80px;  font-family: 'Arial', sans-serif;
+  padding-top: 128px; /* 48px banner + 80px header */
+  font-family: 'Arial', sans-serif;
   background: var(--navy-blue);
   color: var(--white);
   line-height: 1.6;
@@ -36,7 +37,7 @@ header {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  top: 0;
+  top: 48px; /* ← Move down below the banner */
   left: 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -315,4 +316,17 @@ html {
   font-size: 1.5rem;
   cursor: pointer;
   padding-left: 1rem;
+}
+#standards-banner a {
+  color: var(--gold);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#standards-banner a:hover {
+  color: var(--silver);
+}
+#standards-banner {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
 }
