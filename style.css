@@ -285,9 +285,12 @@ a:focus {
   outline: 2px dashed var(--gold);
   outline-offset: 4px;
 }
+/* Smooth Scroll */
 html {
   scroll-behavior: smooth;
 }
+
+/* Banner Styles */
 .top-banner {
   position: fixed;
   top: 0;
@@ -295,38 +298,47 @@ html {
   right: 0;
   background: var(--gold);
   color: var(--navy-blue);
-  text-align: center;
-  padding: 0.75rem 2rem;
-  z-index: 2000;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 2001;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.top-banner a,
+#standards-banner a {
+  color: var(--hiv-red);
+  text-decoration: underline;
   font-weight: bold;
 }
 
-.top-banner a {
-  color: var(--hiv-red);
-  text-decoration: underline;
+.top-banner a:hover,
+#standards-banner a:hover {
+  color: var(--silver);
 }
 
-.top-banner button {
+.top-banner button,
+#dismiss-banner {
   background: none;
   border: none;
   color: var(--navy-blue);
   font-size: 1.5rem;
   cursor: pointer;
-  padding-left: 1rem;
-}
-#standards-banner a {
-  color: var(--gold);
-  text-decoration: underline;
-  font-weight: bold;
+  margin-left: 1rem;
 }
 
-#standards-banner a:hover {
-  color: var(--silver);
-}
-#standards-banner {
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
+@media (max-width: 500px) {
+  .top-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .top-banner button {
+    align-self: flex-end;
+    margin-top: 0.5rem;
+  }
 }
