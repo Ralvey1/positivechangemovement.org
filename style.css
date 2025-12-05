@@ -287,3 +287,32 @@ a:focus {
 html {
   scroll-behavior: smooth;
 }
+.top-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--gold);
+  color: var(--navy-blue);
+  text-align: center;
+  padding: 0.75rem 2rem;
+  z-index: 2000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.top-banner a {
+  color: var(--hiv-red);
+  text-decoration: underline;
+}
+
+.top-banner button {
+  background: none;
+  border: none;
+  color: var(--navy-blue);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-left: 1rem;
+}
