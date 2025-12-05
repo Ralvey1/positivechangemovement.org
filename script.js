@@ -60,4 +60,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", handleScroll);
     handleScroll();
+        // Dismiss banner
+    const banner = document.getElementById("standards-banner");
+    const dismissBtn = document.getElementById("dismiss-banner");
+
+    if (dismissBtn) {
+        dismissBtn.addEventListener("click", () => {
+            banner.style.display = "none";
+        });
+    }
 });
